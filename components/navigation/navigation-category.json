@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_navigation_navigation_categories",
+  "info": {
+    "name": "navigationCategory",
+    "icon": "allergies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "model": "category"
+    }
+  }
+}

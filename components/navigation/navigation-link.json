@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_navigation_navigation_links",
+  "info": {
+    "name": "navigationLink",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

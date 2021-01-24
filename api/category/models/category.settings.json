@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "private": false,
+      "required": true,
+      "maxLength": 64
+    },
+    "posts": {
+      "via": "category",
+      "collection": "post"
+    },
+    "categories": {
+      "collection": "category"
+    }
+  }
+}
