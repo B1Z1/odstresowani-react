@@ -1,10 +1,10 @@
 import { AppProps } from 'next/app';
-import { GlobalStyle } from 'shared/styles/global';
-import AppLayout from 'shared/ui/layouts/app-layout/AppLayoutComponent';
+import AppLayout from 'shared/layouts/app/AppLayoutComponent';
+import 'tailwindcss/tailwind.css';
+import 'shared/styles/styles.scss';
 
 function App({Component, pageProps}: AppProps) {
   return <>
-    <GlobalStyle/>
     <AppLayout>
       <Component { ...pageProps } />
     </AppLayout>

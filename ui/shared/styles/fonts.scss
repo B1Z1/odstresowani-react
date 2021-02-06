@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Value';
+  src: url('/fonts/Value/value-black-web/value-black.eot');
+  src: url('/fonts/Value/value-black-web/value-black.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Value/value-black-web/value-black.woff') format('woff'),
+  url('/fonts/Value/value-black-web/value-black.woff2') format('woff2'),
+  url('/fonts/Value/value-black-web/value-black.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Value';
+  src: url('/fonts/Value/value-regular-web/value-regular.eot');
+  src: url('/fonts/Value/value-regular-web/value-regular.eot?#iefix') format('embedded-opentype'),
+  url('/fonts/Value/value-regular-web/value-regular.woff') format('woff'),
+  url('/fonts/Value/value-regular-web/value-regular.woff2') format('woff2'),
+  url('/fonts/Value/value-regular-web/value-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sanchez';
+  src: url('/fonts/Sanchez/Sanchez-Regular.woff') format('woff'),
+  url('/fonts/Sanchez/Sanchez-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sanchez';
+  src: url('/fonts/Sanchez/Sanchez-Italic.woff') format('woff'),
+  url('/fonts/Sanchez/Sanchez-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}

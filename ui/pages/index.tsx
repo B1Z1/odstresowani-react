@@ -1,29 +1,33 @@
 import Head from 'next/head';
-import PageLayout, { siteTitle } from 'shared/ui/layouts/page-layout/PageLayoutComponent';
-import { getSortedPostsData } from 'shared/resources/post';
-import { GetStaticProps } from 'next';
-import { Flex } from 'shared/styles/ui/flex/FlexComponent';
-import { Column } from 'shared/styles/ui/column/ColumnComponent';
-import { SpacingSize } from 'shared/styles/ui/spacing/domain/SpacingSize';
+import BlogLayoutPage from 'shared/layouts/page/BlogLayoutPage';
+import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
 
 export default function Home() {
+  const items: Array<BlogLinkData> = [
+    {
+      value: 'Artykuły',
+      href: '/#'
+    },
+    {
+      value: 'Recenzje',
+      href: '/#'
+    }
+  ];
+
   return (
-    <PageLayout>
+    <BlogLayoutPage navigationLinks={ items }>
       <Head>
-        <title>{ siteTitle }</title>
+        <title>Title</title>
       </Head>
-      <Flex>
-        <Column one pt={SpacingSize.TWO}>Hello</Column>
-      </Flex>
-    </PageLayout>
+    </BlogLayoutPage>
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData();
-  return {
-    props: {
-      allPostsData
-    }
-  };
-};
+// export const getStaticProps: GetStaticProps = async () => {
+//   const allPostsData = getSortedPostsData();
+//   return {
+//     props: {
+//       allPostsData
+//     }
+//   };
+// };
