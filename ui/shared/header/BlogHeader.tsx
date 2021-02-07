@@ -12,7 +12,9 @@ export function BlogHeader(props: BlogHeaderProps) {
 
   return (
     <header
-      className="ob-fixed ob-top-0 ob-left-0 ob-w-screen ob-flex ob-justify-between ob-items-center lg:ob-justify-start
+      className="ob-fixed ob-top-0 ob-left-0
+                 ob-w-screen
+                 ob-flex ob-justify-between ob-items-center lg:ob-justify-start
                  ob-px-6 ob-py-4 ob-border-b ob-border-secondary ob-bg-white ob-z-20">
       <div className="ob-w-auto lg:ob-w-1/6">
         <BlogHeaderLogo/>

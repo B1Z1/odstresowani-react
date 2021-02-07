@@ -2,5 +2,8 @@ import { BlogLinkProps } from 'shared/ui/item/BlogLinkProps';
 import { HTMLAttributes } from 'react';
 
 export interface BlogMobileNavigationProps extends HTMLAttributes<HTMLDivElement> {
-  items?: Array<BlogLinkProps>
+  onBackgroundClick: (isActive: boolean) => void;
+  isActive: boolean;
+
+  navigationLinks?: Array<BlogLinkProps>
 }

@@ -1,4 +1,5 @@
 import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
+import { HTMLAttributes } from 'react';
 
-export interface BlogLinkProps extends BlogLinkData {
+export interface BlogLinkProps extends BlogLinkData, HTMLAttributes<HTMLLinkElement> {
 }

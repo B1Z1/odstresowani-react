@@ -1,29 +1,19 @@
 import React from 'react';
-import { BlogHeaderNavigationProps } from 'shared/header/navigation/BlogHeaderNavigationProps';
-import { BlogLinkProps } from 'shared/ui/item/BlogLinkProps';
-import { BlogLink } from 'shared/ui/item/BlogLink';
 import styles from 'shared/mobile-navigation/BlogMobileNavigation.module.scss';
+import { BlogMobileNavigationProps } from 'shared/mobile-navigation/BlogMobileNavigationProps';
+import { mapWithLast } from 'shared/utils/map-with-last/mapWithLast';
+import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
+import { getMobileNavigationLinkItem } from 'shared/mobile-navigation/utils/getMobileNavigationLinkItem';
 
-export function BlogMobileNavigation(props: BlogHeaderNavigationProps) {
+
+export function BlogMobileNavigation(props: BlogMobileNavigationProps) {
   const onBackgroundClick = () => {
     props.onBackgroundClick(false);
   };
   let blogNavigationItems: Array<JSX.Element> = [];
 
   if (props && props.navigationLinks) {
-    const {navigationLinks} = props;
-
-    blogNavigationItems = navigationLinks.map((item: BlogLinkProps, index: number) => {
-      const isLast: boolean = index === navigationLinks.length - 1;
-      const itemGap: string = !isLast ? 'ob-mb-4' : '';
-
-      return (
-        <li key={ index }
-            className={ itemGap }>
-          <BlogLink { ...item } />
-        </li>
-      );
-    });
+    blogNavigationItems = mapWithLast<JSX.Element, BlogLinkData>(props.navigationLinks, getMobileNavigationLinkItem);
   }
 
   return (
@@ -32,7 +22,7 @@ export function BlogMobileNavigation(props: BlogHeaderNavigationProps) {
           ${ styles['ob-blog-mobile-navigation'] }
           lg:ob-hidden
           ob-fixed ob-top-0 ob-left-0
-          ob-w-screen ob-h-screen
+          ob-w-screen ob-h-screen ob-z-10
     ` }>
       <div onClick={ onBackgroundClick }
            className="ob-bg-black ob-opacity-50
