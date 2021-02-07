@@ -95,7 +95,6 @@ export default function Home() {
       </Head>
 
       <div className="ob-container ob-relative ob-mx-auto ob-flex ob-flex-wrap">
-
       </div>
     </BlogLayoutPage>
   );
