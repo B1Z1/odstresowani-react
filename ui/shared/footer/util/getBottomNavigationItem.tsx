@@ -1,9 +1,9 @@
-import { BlogLink } from 'shared/ui/item/BlogLink';
+import { BlogLink } from 'shared/ui/link/BlogLink';
 import React from 'react';
-import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
+import { BlogLinkData } from 'shared/ui/link/BlogLinkData';
 
 export function getBottomNavigationItem(blogLinkData: BlogLinkData, index: number, isLast: boolean): JSX.Element {
-  const margin: string = !isLast ? 'ob-mb-4 lg:ob-mr-6 lg:ob-mb-0' : '';
+  const margin: string = !isLast ? 'ob-mb-4 xl:ob-mr-6 xl:ob-mb-0' : '';
 
   return (
     <li key={ index } className={ margin }>

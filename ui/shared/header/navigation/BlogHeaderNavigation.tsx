@@ -1,7 +1,7 @@
 import React from 'react';
 import { BlogHeaderNavigationProps } from 'shared/header/navigation/BlogHeaderNavigationProps';
 import { mapWithLast } from 'shared/utils/map-with-last/mapWithLast';
-import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
+import { BlogLinkData } from 'shared/ui/link/BlogLinkData';
 import { getBlogHeaderNavigationLinkItem } from 'shared/header/navigation/utils/getBlogHeaderNavigationLinkItem';
 
 export function BlogHeaderNavigation(props: BlogHeaderNavigationProps) {

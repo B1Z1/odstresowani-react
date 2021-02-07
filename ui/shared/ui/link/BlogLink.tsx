@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { BlogLinkProps } from 'shared/ui/item/BlogLinkProps';
+import { BlogLinkProps } from 'shared/ui/link/BlogLinkProps';
 
 export function BlogLink(props: BlogLinkProps) {
   return (

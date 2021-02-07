@@ -2,7 +2,7 @@ import React from 'react';
 import styles from 'shared/mobile-navigation/BlogMobileNavigation.module.scss';
 import { BlogMobileNavigationProps } from 'shared/mobile-navigation/BlogMobileNavigationProps';
 import { mapWithLast } from 'shared/utils/map-with-last/mapWithLast';
-import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
+import { BlogLinkData } from 'shared/ui/link/BlogLinkData';
 import { getMobileNavigationLinkItem } from 'shared/mobile-navigation/utils/getMobileNavigationLinkItem';
 
 
@@ -20,9 +20,9 @@ export function BlogMobileNavigation(props: BlogMobileNavigationProps) {
     <nav className={ `
           ${ props.isActive ? styles['ob-blog-mobile-navigation--active'] : '' }
           ${ styles['ob-blog-mobile-navigation'] }
-          lg:ob-hidden
+          xl:ob-hidden
           ob-fixed ob-top-0 ob-left-0
-          ob-w-screen ob-h-screen ob-z-10
+          ob-w-screen ob-h-screen ob-z-40
     ` }>
       <div onClick={ onBackgroundClick }
            className="ob-bg-black ob-opacity-50

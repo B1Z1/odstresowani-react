@@ -1,6 +1,6 @@
 import React from 'react';
 import { BlogFooterNavigationProps } from 'shared/footer/navigation/BlogFooterNavigationProps';
-import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
+import { BlogLinkData } from 'shared/ui/link/BlogLinkData';
 import { mapWithLast } from 'shared/utils/map-with-last/mapWithLast';
 import { getNavigationItemBySize } from 'shared/footer/navigation/utils/getNavigationItemBySize';
 
@@ -26,20 +26,20 @@ export function BlogFooterNavigation(props: BlogFooterNavigationProps) {
 
   return (
     <div className={ `${ props.className } ob-flex ob-flex-wrap ob-mx-auto` }>
-      <ul className="ob-w-full lg:ob-w-1/4
-                     ob-mb-4 lg:ob-mb-0">
+      <ul className="ob-w-full xl:ob-w-1/4
+                     ob-mb-4 xl:ob-mb-0">
         { firstColumnLinks }
       </ul>
 
-      <div className="ob-w-full lg:ob-w-1/4 lg:ob-offset-1/4
-                      ob-pr-4 ob-mb-4 lg:ob-mb-0">
+      <div className="ob-w-full xl:ob-w-1/4 xl:ob-offset-1/4
+                      ob-pr-4 ob-mb-4 xl:ob-mb-0">
         <h4 className="ob-font-base ob-font-bold ob-mb-4">Strefa Terapeuty:</h4>
         <ul>
           { secondColumnLinks }
         </ul>
       </div>
 
-      <div className="ob-w-full lg:ob-w-1/4">
+      <div className="ob-w-full xl:ob-w-1/4">
         <h4 className="ob-font-base ob-font-bold ob-mb-4">Strefa użytkownika:</h4>
         <ul>
           { thirdColumnLinks }

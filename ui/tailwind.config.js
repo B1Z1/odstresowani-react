@@ -20,7 +20,8 @@ module.exports = {
       }
     },
     fill: {
-      primary: '#0052C3'
+      primary: '#0052C3',
+      secondary: '#B9B9B9'
     }
   },
   variants: {

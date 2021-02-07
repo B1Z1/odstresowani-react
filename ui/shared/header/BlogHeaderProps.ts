@@ -1,4 +1,4 @@
-import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
+import { BlogLinkData } from 'shared/ui/link/BlogLinkData';
 
 export interface BlogHeaderProps {
   navigationLinks?: Array<BlogLinkData>;

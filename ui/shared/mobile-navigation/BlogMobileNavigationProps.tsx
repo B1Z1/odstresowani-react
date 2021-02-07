@@ -1,4 +1,4 @@
-import { BlogLinkProps } from 'shared/ui/item/BlogLinkProps';
+import { BlogLinkProps } from 'shared/ui/link/BlogLinkProps';
 import { HTMLAttributes } from 'react';
 
 export interface BlogMobileNavigationProps extends HTMLAttributes<HTMLDivElement> {

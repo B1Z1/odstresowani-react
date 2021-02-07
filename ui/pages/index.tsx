@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import BlogLayoutPage from 'shared/layouts/page/BlogLayoutPage';
-import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
+import { BlogLinkData } from 'shared/ui/link/BlogLinkData';
 import { BlogFooterData } from 'shared/footer/BlogFooterData';
 import { faFacebookSquare, faInstagramSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 
@@ -93,6 +93,10 @@ export default function Home() {
       <Head>
         <title>Title</title>
       </Head>
+
+      <div className="ob-container ob-relative ob-mx-auto ob-flex ob-flex-wrap">
+
+      </div>
     </BlogLayoutPage>
   );
 }

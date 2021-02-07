@@ -1,4 +1,4 @@
-import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
+import { BlogLinkData } from 'shared/ui/link/BlogLinkData';
 import { HTMLAttributes } from 'react';
 
 export interface BlogFooterNavigationProps extends HTMLAttributes<HTMLDivElement> {

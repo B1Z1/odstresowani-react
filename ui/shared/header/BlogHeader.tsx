@@ -12,17 +12,16 @@ export function BlogHeader(props: BlogHeaderProps) {
 
   return (
     <header
-      className="ob-fixed ob-top-0 ob-left-0
-                 ob-w-screen
-                 ob-flex ob-justify-between ob-items-center lg:ob-justify-start
-                 ob-px-6 ob-py-4 ob-border-b ob-border-secondary ob-bg-white ob-z-20">
-      <div className="ob-w-auto lg:ob-w-1/6">
+      className="ob-fixed ob-top-0 ob-right-0 ob-left-0
+                 ob-flex ob-justify-between ob-items-center
+                 ob-px-6 ob-py-4 ob-border-b ob-border-secondary ob-bg-white ob-z-50">
+      <div className="ob-w-auto xl:ob-w-1/6">
         <BlogHeaderLogo/>
       </div>
       <BlogHeaderNavigation navigationLinks={ props.navigationLinks }
-                            className="ob-hidden lg:ob-block ob-w-4/6"/>
-      <BlogHeaderOdstresowaniLink className="ob-hidden lg:ob-block lg:ob-w-1/6"/>
-      <BlogHeaderMobileButton onClick={ onMobileButtonClick } className="ob-block lg:ob-hidden"/>
+                            className="ob-hidden xl:ob-block ob-container ob-mx-auto"/>
+      <BlogHeaderOdstresowaniLink className="ob-hidden xl:ob-block ob-w-auto xl:ob-w-1/6"/>
+      <BlogHeaderMobileButton onClick={ onMobileButtonClick } className="ob-block xl:ob-hidden"/>
     </header>
   );
 }

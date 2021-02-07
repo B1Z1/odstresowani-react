@@ -1,5 +1,5 @@
 import React from 'react';
-import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
+import { BlogLinkData } from 'shared/ui/link/BlogLinkData';
 import { BlogFooterData } from 'shared/footer/BlogFooterData';
 
 export interface BlogLayoutPageProps {

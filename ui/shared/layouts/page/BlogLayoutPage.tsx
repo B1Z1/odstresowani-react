@@ -16,10 +16,10 @@ export default function BlogLayoutPage(props: BlogLayoutPageProps) {
       <BlogMobileNavigation isActive={ isMobileNavigationActive }
                             onBackgroundClick={ setMobileNavigation }
                             navigationLinks={ headerLinks }/>
-      <div className="ob-relative ob-w-screen ob-min-h-screen
+      <div className="ob-relative ob-w-full ob-min-h-screen
                       ob-flex ob-flex-col
                       ob-overflow-x-hidden ob-p-4 ob-pt-20">
-        <main className="ob-flex-1">{ children }</main>
+        <main className="ob-relative ob-w-full ob-flex-1">{ children }</main>
         <BlogFooter { ...footerData }/>
       </div>
     </>

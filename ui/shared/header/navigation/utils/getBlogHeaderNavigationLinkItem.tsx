@@ -1,5 +1,5 @@
-import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
-import { BlogLink } from 'shared/ui/item/BlogLink';
+import { BlogLinkData } from 'shared/ui/link/BlogLinkData';
+import { BlogLink } from 'shared/ui/link/BlogLink';
 import React from 'react';
 
 export function getBlogHeaderNavigationLinkItem(value: BlogLinkData, index: number, isLast: boolean): JSX.Element {

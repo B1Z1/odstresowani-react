@@ -3,7 +3,7 @@ import React from 'react';
 import { BlogFooterNavigation } from 'shared/footer/navigation/BlogFooterNavigation';
 import { BlogFooterSocialMediaList } from 'shared/footer/social-media-list/BlogFooterSocialMediaList';
 import { mapWithLast } from 'shared/utils/map-with-last/mapWithLast';
-import { BlogLinkData } from 'shared/ui/item/BlogLinkData';
+import { BlogLinkData } from 'shared/ui/link/BlogLinkData';
 import { getBottomNavigationItem } from 'shared/footer/util/getBottomNavigationItem';
 
 export function BlogFooter(props: BlogFooterProps) {
@@ -15,8 +15,8 @@ export function BlogFooter(props: BlogFooterProps) {
 
   return (
     <footer>
-      <nav className="ob-bg-black ob-text-white ob-pt-8 lg:ob-pt-16 ob-pb-8">
-        <div className="ob-container ob-px-4 lg:ob-px-8 ob-mx-auto">
+      <nav className="ob-bg-black ob-text-white ob-pt-8 xl:ob-pt-16 ob-pb-8">
+        <div className="ob-container ob-px-4 xl:ob-px-8 ob-mx-auto">
           <BlogFooterNavigation className="ob-mb-6"
                                 firstColumnLinks={ props.firstColumnLinks }
                                 secondColumnLinks={ props.secondColumnLinks }
@@ -24,10 +24,10 @@ export function BlogFooter(props: BlogFooterProps) {
           <BlogFooterSocialMediaList socialMediaItems={ props.socialMediaItems }/>
         </div>
       </nav>
-      <div className="ob-container lg:ob-flex ob-justify-between ob-mx-auto ob-px-4 lg:ob-px-8 ob-pt-4 lg:ob-pt-7 lg:ob-pb-6">
-        <p className="ob-font-bold ob-mb-4 lg:ob-mb-0">© 2018 Odstresowani.pl All rights reserved.</p>
+      <div className="ob-container xl:ob-flex ob-justify-between ob-mx-auto ob-px-4 xl:ob-px-8 ob-pt-4 xl:ob-pt-7 xl:ob-pb-6">
+        <p className="ob-font-bold ob-mb-4 xl:ob-mb-0">© 2018 Odstresowani.pl All rights reserved.</p>
 
-        <ul className="lg:ob-flex">
+        <ul className="xl:ob-flex">
           { bottomNavigationItems }
         </ul>
       </div>
