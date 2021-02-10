@@ -11,15 +11,15 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Name": {
+    "name": {
       "type": "string",
       "private": false,
       "required": true,
       "maxLength": 64
     },
     "posts": {
-      "via": "category",
-      "collection": "post"
+      "collection": "post",
+      "via": "category"
     },
     "categories": {
       "collection": "category"
