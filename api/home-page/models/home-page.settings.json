@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "homePage",
+  "info": {
+    "name": "Home Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "category": {
+      "model": "category"
+    }
+  }
+}

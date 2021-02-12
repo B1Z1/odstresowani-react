@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "footer",
+  "info": {
+    "name": "Footer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "leftSideNavigation": {
+      "type": "dynamiczone",
+      "components": [
+        "navigation.navigation-category",
+        "navigation.navigation-link"
+      ],
+      "required": true
+    },
+    "middleSideNavigation": {
+      "type": "dynamiczone",
+      "components": [
+        "navigation.navigation-category",
+        "navigation.navigation-link"
+      ]
+    },
+    "rightSideNavigation": {
+      "type": "dynamiczone",
+      "components": [
+        "navigation.navigation-category",
+        "navigation.navigation-link"
+      ],
+      "required": true
+    },
+    "bottomSideNavigation": {
+      "type": "dynamiczone",
+      "components": [
+        "navigation.navigation-category",
+        "navigation.navigation-link"
+      ]
+    },
+    "socialMediaNavigation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.navigation-icon-link",
+      "required": true
+    }
+  }
+}
