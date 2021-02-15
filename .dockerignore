@@ -1,0 +1,13 @@
+.git/
+
+docker-compose.yml
+nginx/
+
+odstresowani-blog-frontend/.gitignore
+odstresowani-blog-frontend/node_modules/
+odstresowani-blog-frontend/.next
+
+odstresowani-blog-backend/.cache
+odstresowani-blog-backend/build
+odstresowani-blog-backend/node_modules/
+odstresowani-blog-backend/.gitignore

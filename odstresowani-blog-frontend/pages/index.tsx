@@ -67,7 +67,7 @@ export default function Home() {
   const [postsData, setPostsData] = useState<Array<BlogCardData>>([]);
   const [startIndex, setStartIndex] = useState<number>(0);
   const {data: homePageData} = useQuery<BlogHomePageQueryResponse>(HOME_PAGE_QUERY);
-  const categoryId: string = homePageData?.homePage.category.id || '';
+  const categoryId: string = homePageData?.homePage?.category?.id || '';
   const {
     data: postPreviewData,
     refetch: refetchPostPreview
@@ -78,7 +78,7 @@ export default function Home() {
     }
   });
   const cardElements: Array<JSX.Element> = mapWithLast<JSX.Element, BlogCardData>(postsData, getPostCardItems);
-  const categoryLinksData: Array<BlogLinkData> = !!homePageData && homePageData.homePage.category.id ?
+  const categoryLinksData: Array<BlogLinkData> = homePageData?.homePage?.category.id ?
     convertCategoriesResponseToBlogLink(homePageData.homePage.category) :
     [];
 
@@ -156,7 +156,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
     query: HOME_PAGE_QUERY
   });
 
-  if (homePageQuery.data && homePageQuery.data.homePage.category) {
+  if (homePageQuery.data && homePageQuery.data.homePage && homePageQuery.data.homePage.category) {
     const startIndex: number = 0;
     const categoryId: string = homePageQuery.data.homePage.category.id;
 

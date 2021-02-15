@@ -2,6 +2,7 @@ version: '3'
 services:
   strapi:
     image: strapi/strapi
+    restart: unless-stopped
     environment:
       DATABASE_CLIENT: postgres
       DATABASE_NAME: strapi
@@ -26,14 +27,15 @@ services:
       - ./data:/var/lib/postgresql/data
 
   nextjs:
-    ports:
-      - 3000:3000
+    volumes:
+      - ./odstresowani-blog-frontend:/usr/app
+      - /usr/app/node_modules
+      - /usr/app/.next
     build:
       context: odstresowani-blog-frontend
       dockerfile: Dockerfile
-    volumes:
-      - ./odstresowani-blog-frontend:/usr/src/app
-      - /usr/src/app/node_modules
-      - /usr/src/app/.next
-    env_file:
-      - .env
+
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:80
