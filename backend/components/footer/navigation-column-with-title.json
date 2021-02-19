@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_footer_navigation_column_with_titles",
+  "info": {
+    "name": "navigationColumnWithTitle",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "navigationLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.navigation-link"
+    }
+  }
+}

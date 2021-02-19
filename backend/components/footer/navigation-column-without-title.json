@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_footer_navigation_column_without_titles",
+  "info": {
+    "name": "navigationColumnWithoutTitle",
+    "icon": "angle-double-right"
+  },
+  "options": {},
+  "attributes": {
+    "navigationLink": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.navigation-link"
+    }
+  }
+}

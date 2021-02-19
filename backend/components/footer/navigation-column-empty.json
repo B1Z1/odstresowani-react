@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_footer_navigation_column_empties",
+  "info": {
+    "name": "navigationColumnEmpty",
+    "icon": "angle-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "emptyTitle": {
+      "type": "string",
+      "default": "Puste pole",
+      "required": false
+    }
+  }
+}

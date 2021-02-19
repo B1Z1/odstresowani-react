@@ -21,7 +21,8 @@
       "type": "dynamiczone",
       "components": [
         "footer.navigation-column-empty",
-        "footer.navigation-column-with-title"
+        "footer.navigation-column-with-title",
+        "footer.navigation-column-without-title"
       ]
     }
   }
