@@ -8,6 +8,6 @@ module.exports = {
 		return config
 	},
 	generateBuildId: async () => {
-		return 'odstresowani-blog-frontend'
+		return 'frontend'
 	},
 }

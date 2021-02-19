@@ -11,7 +11,7 @@ services:
       DATABASE_USERNAME: strapi
       DATABASE_PASSWORD: strapi
     volumes:
-      - ./odstresowani-blog-backend:/srv/app
+      - ./backend:/srv/app
     ports:
       - '1337:1337'
     depends_on:
@@ -19,6 +19,7 @@ services:
 
   postgres:
     image: postgres
+    restart: unless-stopped
     environment:
       POSTGRES_DB: strapi
       POSTGRES_USER: strapi
@@ -27,12 +28,13 @@ services:
       - ./data:/var/lib/postgresql/data
 
   nextjs:
+    restart: unless-stopped
     volumes:
-      - ./odstresowani-blog-frontend:/usr/app
+      - ./frontend:/usr/app
       - /usr/app/node_modules
       - /usr/app/.next
     build:
-      context: odstresowani-blog-frontend
+      context: frontend
       dockerfile: Dockerfile
 
   nginx:
