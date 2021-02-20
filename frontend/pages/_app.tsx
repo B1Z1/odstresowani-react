@@ -1,9 +1,9 @@
 import { AppProps } from 'next/app';
-import AppLayout from 'shared/layouts/app/AppLayoutComponent';
+import AppLayout from 'app/components/layouts/app/AppLayoutComponent';
 import 'tailwindcss/tailwind.css';
-import '../shared/styles/styles.scss';
+import '../app/styles/styles.scss';
 import { ApolloProvider } from '@apollo/client';
-import { useApollo } from 'lib/apollo/apolloClient';
+import { useApollo } from 'app/lib/apollo/apolloClient';
 
 
 function App({Component, pageProps}: AppProps) {

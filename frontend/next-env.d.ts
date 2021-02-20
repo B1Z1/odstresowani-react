@@ -1,2 +1,2 @@
-/// <reference types="next" />
-/// <reference types="next/types/global" />
+/// <reference column-types="next" />
+/// <reference column-types="next/types/global" />

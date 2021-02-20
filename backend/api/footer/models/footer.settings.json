@@ -24,6 +24,12 @@
         "footer.navigation-column-with-title",
         "footer.navigation-column-without-title"
       ]
+    },
+    "bottomNavigation": {
+      "type": "dynamiczone",
+      "components": [
+        "navigation.navigation-link"
+      ]
     }
   }
 }
