@@ -35,21 +35,21 @@ export default function Home() {
     const {previewPostsData, footerData, navigationData, categoriesData, loadPostsData} = useHome();
     const [hasMore, setHasMore] = useState<boolean>(false);
     const [postsData, setPostsData] = useState<Array<CardData>>([]);
-    const [startIndex, setStartIndex] = useState<number>(0);
+    const startIndex: number = postsData.length;
     const cardElements: Array<JSX.Element> = mapWithLast<JSX.Element, CardData>(postsData, getPostCardItems);
+
+    useEffect(() => {
+        setTimeout(() => setHasMore(false), 5000);
+    }, []);
 
     useEffect(() => {
         const postsDataCount: number = previewPostsData.length;
         const isMoreThanZero: boolean = postsDataCount > 0;
-        let nextIndex: number;
 
         if (!isMoreThanZero) {
             setHasMore(false);
             return;
         }
-
-        nextIndex = startIndex + postsDataCount;
-        setStartIndex(nextIndex);
 
         setPostsData([...postsData, ...previewPostsData]);
         setHasMore(true);

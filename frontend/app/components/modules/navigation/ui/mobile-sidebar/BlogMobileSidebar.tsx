@@ -16,8 +16,8 @@ export function BlogMobileSidebar(props: BlogMobileSidebarProps) {
 
     return (
         <nav className={ `
-          ${ props.isActive ? styles['ob-blog-mobile-sidebar-navigation--active'] : '' }
-          ${ styles['ob-blog-mobile-sidebar-navigation'] }
+          ${ props.isActive ? styles['ob-blog-mobile-navigation--active'] : '' }
+          ${ styles['ob-blog-mobile-navigation'] }
           xl:ob-hidden
           ob-fixed ob-top-0 ob-left-0
           ob-w-screen ob-h-screen ob-z-40
@@ -28,7 +28,7 @@ export function BlogMobileSidebar(props: BlogMobileSidebarProps) {
                       ob-w-full ob-h-full">
             </div>
             <ul className={ `
-          ${ styles['ob-blog-mobile-sidebar-navigation__list'] }
+          ${ styles['ob-blog-mobile-navigation__list'] }
           ob-blog-mobile-navigation__list
           ob-bg-white
           ob-w-1/2 ob-h-full

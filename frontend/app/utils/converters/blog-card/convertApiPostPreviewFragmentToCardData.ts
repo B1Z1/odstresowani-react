@@ -9,7 +9,7 @@ export function convertApiPostPreviewFragmentToCardData(postPreviewFragment: Api
         href: `/post/${ postPreviewFragment.id }`,
         date: new Date(postPreviewFragment.creation_date),
         imageData: {
-            src: postPreviewFragment.cover_image.url,
+            src: `/api/${postPreviewFragment.cover_image.url}`,
             alt: postPreviewFragment.cover_image.alternativeText,
             title: postPreviewFragment.cover_image.alternativeText
         }
