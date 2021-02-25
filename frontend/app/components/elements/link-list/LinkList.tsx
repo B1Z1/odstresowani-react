@@ -1,8 +1,8 @@
-import { BlogLinkListProps } from 'app/components/elements/link-list/BlogLinkListProps';
+import { LinkListProps } from 'app/components/elements/link-list/LinkListProps';
 import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
 import { getLinkListItem } from 'app/components/elements/link-list/utils/getLinkListItem';
 
-export function BlogLinkList(props: BlogLinkListProps) {
+export function LinkList(props: LinkListProps) {
   const className: string = props.className || '';
   let linkItems: Array<JSX.Element> = [];
 

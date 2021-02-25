@@ -1,6 +1,6 @@
-import { BlogSignatureProps } from 'app/components/elements/sygnature/BlogSignatureProps';
+import { SignatureProps } from 'app/components/elements/sygnature/SignatureProps';
 
-export function BlogSignature(props: BlogSignatureProps) {
+export function Signature(props: SignatureProps) {
   return (
     <svg
       className={ props.className }

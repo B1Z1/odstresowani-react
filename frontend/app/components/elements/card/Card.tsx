@@ -1,5 +1,5 @@
 import { CardProps } from 'app/components/elements/card/CardProps';
-import { BlogPostDate } from 'app/components/elements/post-date/BlogPostDate';
+import { PostDate } from 'app/components/elements/post-date/PostDate';
 import { CardSignatureBadge } from 'app/components/elements/card/signature-badge/CardSignatureBadge';
 import Link from 'next/link';
 import styles from 'app/components/elements/card/Card.module.scss';
@@ -13,9 +13,9 @@ export function Card(props: CardProps) {
     <Link href={ cardData.href }>
       <a className={ `${ className } ob-relative ob-flex ob-flex-col ob-w-full` }>
         <figure className="ob-relative ob-w-full ob-h-40 sm:ob-h-60 xl:ob-h-80 ob-pointer-events-none">
-          <BlogPostDate date={ cardData.date }
-                        dateIconClassName="ob-fill-secondary"
-                        className="ob-absolute
+          <PostDate date={ cardData.date }
+                    dateIconClassName="ob-fill-secondary"
+                    className="ob-absolute
                                    ob-top-4 xl:ob-top-8 ob-left-4 xl:ob-left-8
                                    ob-z-10 ob-text-secondary"/>
 

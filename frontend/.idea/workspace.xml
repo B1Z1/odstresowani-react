@@ -1,37 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16387" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16387" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/../data/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/pg_stat/global.stat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/../data/pg_wal/000000010000000000000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/../data/pg_xact/0000" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/page/LayoutPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/page/LayoutPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/category/domain/BlogCategoriesPageQueryResponse.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/category/resource/categoryPageQuery.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/resource/fragments/blogNavigationFragmentCategory.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/resource/fragments/blogNavigationFragmentLink.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/resource/fragments/blogNavigationFragmentSocialMedia.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/resource/navigationQuery.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/header/BlogHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/BlogHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/header/BlogHeaderProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/BlogHeaderProps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/header/logo/BlogHeaderLogo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/logo/BlogHeaderLogo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/header/mobile-button/BlogHeaderMobileButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/mobile-button/BlogHeaderMobileButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/header/mobile-button/BlogHeaderMobileButtonProps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/mobile-button/BlogHeaderMobileButtonProps.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/header/navigation/BlogHeaderNavigation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/navigation/BlogHeaderNavigation.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/header/navigation/BlogHeaderNavigationProps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/navigation/BlogHeaderNavigationProps.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/header/navigation/utils/getBlogHeaderNavigationLinkItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/navigation/utils/getBlogHeaderNavigationLinkItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/header/odstresowani-link/BlogHeaderOdstresowaniLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/odstresowani-link/BlogHeaderOdstresowaniLink.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/header/odstresowani-link/BlogHeaderOdstresowaniLinkProps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/odstresowani-link/BlogHeaderOdstresowaniLinkProps.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/mobile-sidebar/BlogMobileSidebar.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/mobile-sidebar/BlogMobileSidebar.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/mobile-sidebar/BlogMobileSidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/mobile-sidebar/BlogMobileSidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/mobile-sidebar/BlogMobileSidebarProps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/mobile-sidebar/BlogMobileSidebarProps.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/navigation/ui/mobile-sidebar/utils/getMobileLinkItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/mobile-sidebar/utils/getMobileLinkItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/category/[id].tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,6 +62,7 @@
       <workItem from="1614114968255" duration="818000" />
       <workItem from="1614273815355" duration="161000" />
       <workItem from="1614274190049" duration="1086000" />
+      <workItem from="1614275392524" duration="210000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1613795161051</created>

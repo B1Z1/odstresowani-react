@@ -1,8 +1,8 @@
-import { BlogPostDateClockIcon } from 'app/components/elements/post-date/clock-icon/BlogPostDateClockIcon';
-import { BlogPostDateProps } from 'app/components/elements/post-date/BlogPostDateProps';
+import { PostDateClockIcon } from 'app/components/elements/post-date/clock-icon/PostDateClockIcon';
+import { PostDateProps } from 'app/components/elements/post-date/PostDateProps';
 import { convertDateForPostDate } from 'app/components/elements/post-date/utils/convertDateForPostDate';
 
-export function BlogPostDate(props: BlogPostDateProps) {
+export function PostDate(props: PostDateProps) {
   const {date} = props;
   const dateString: string = date.toDateString();
   const convertedDate: string = convertDateForPostDate(date);
@@ -10,7 +10,7 @@ export function BlogPostDate(props: BlogPostDateProps) {
 
   return (
     <div className={ `${ props.className } ob-flex ob-items-center` }>
-      <BlogPostDateClockIcon className={ `${ dateIconClassName } ob-w-4 ob-h-4 ob-mr-2` }/>
+      <PostDateClockIcon className={ `${ dateIconClassName } ob-w-4 ob-h-4 ob-mr-2` }/>
       <time dateTime={ dateString }>{ convertedDate }</time>
     </div>
   );

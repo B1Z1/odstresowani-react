@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from 'app/components/modules/mobile-sidebar/BlogMobileSidebar.module.scss';
-import { BlogMobileSidebarProps } from 'app/components/modules/mobile-sidebar/BlogMobileSidebarProps';
+import styles from 'app/components/modules/mobile-sidebar/MobileSidebar.module.scss';
+import { MobileSidebarProps } from 'app/components/modules/mobile-sidebar/MobileSidebarProps';
 import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
 import { CustomLinkData } from 'app/components/elements/link/CustomLinkData';
 import { getMobileLinkItem } from 'app/components/modules/mobile-sidebar/utils/getMobileLinkItem';
 
 
-export function BlogMobileSidebar(props: BlogMobileSidebarProps) {
+export function MobileSidebar(props: MobileSidebarProps) {
     const navigationBlogLinksData: Array<CustomLinkData> = props.navigationItemsData;
     const blogNavigationItems: Array<JSX.Element> = mapWithLast<JSX.Element, CustomLinkData>(navigationBlogLinksData, getMobileLinkItem);
 

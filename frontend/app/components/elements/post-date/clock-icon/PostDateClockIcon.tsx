@@ -1,6 +1,6 @@
-import { BlogPostDateClockIconProps } from 'app/components/elements/post-date/clock-icon/BlogPostDateClockIconProps';
+import { PostDateClockIconProps } from 'app/components/elements/post-date/clock-icon/PostDateClockIconProps';
 
-export function BlogPostDateClockIcon(props: BlogPostDateClockIconProps) {
+export function PostDateClockIcon(props: PostDateClockIconProps) {
   return (
     <svg className={ props.className }
          xmlns="http://www.w3.org/2000/svg"

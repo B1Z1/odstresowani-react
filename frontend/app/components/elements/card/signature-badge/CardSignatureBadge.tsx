@@ -1,4 +1,4 @@
-import { BlogSignature } from 'app/components/elements/sygnature/BlogSignature';
+import { Signature } from 'app/components/elements/sygnature/Signature';
 import { CardSignatureBadgeProps } from 'app/components/elements/card/signature-badge/CardSignatureBadgeProps';
 
 export function CardSignatureBadge(props: CardSignatureBadgeProps) {
@@ -10,7 +10,7 @@ export function CardSignatureBadge(props: CardSignatureBadgeProps) {
                   ob-flex ob-items-center ob-justify-center
                   ob-w-8 ob-h-8
                   ob-bg-white ob-rounded-full` }>
-      <BlogSignature className="ob-w-4 ob-h-4"/>
+      <Signature className="ob-w-4 ob-h-4"/>
     </div>
   );
 }

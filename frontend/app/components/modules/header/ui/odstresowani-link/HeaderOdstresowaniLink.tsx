@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import { BlogHeaderOdstresowaniLinkProps } from 'app/components/modules/header/odstresowani-link/BlogHeaderOdstresowaniLinkProps';
+import { HeaderOdstresowaniLinkProps } from 'app/components/modules/header/ui/odstresowani-link/HeaderOdstresowaniLinkProps';
 
-export function BlogHeaderOdstresowaniLink(props: BlogHeaderOdstresowaniLinkProps) {
+export function HeaderOdstresowaniLink(props: HeaderOdstresowaniLinkProps) {
   return (
     <p className={ props.className }>
       blog portalu &nbsp;

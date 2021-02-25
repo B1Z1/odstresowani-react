@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import LayoutPage from 'app/components/layouts/page/LayoutPage';
-import { BlogLinkList } from 'app/components/elements/link-list/BlogLinkList';
+import { LinkList } from 'app/components/elements/link-list/LinkList';
 import { ApolloClient, NormalizedCacheObject } from '@apollo/client';
 import { GetServerSideProps } from 'next';
 import { initializeApollo } from 'app/lib/apollo/apolloClient';
@@ -78,9 +78,9 @@ export default function Home() {
                     </h1>
                 </div>
 
-                <BlogLinkList className="ob-mb-12"
-                              title="Kategorie"
-                              links={ categoriesData }/>
+                <LinkList className="ob-mb-12"
+                          title="Kategorie"
+                          links={ categoriesData }/>
 
                 <InfiniteScroll className="ob-flex ob-flex-wrap"
                                 dataLength={ cardElements.length }
