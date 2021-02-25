@@ -6,7 +6,6 @@ import { GetServerSideProps } from 'next';
 import { initializeApollo } from 'app/lib/apollo/apolloClient';
 import { CardData } from 'app/components/elements/card/CardData';
 import InfiniteScroll from 'react-infinite-scroll-component';
-import { Card } from 'app/components/elements/card/Card';
 import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
 import { useEffect, useState } from 'react';
 import { POST_PREVIEW_QUERY } from 'app/api/queries/post-preview/postPreviewQuery';
@@ -18,25 +17,18 @@ import { ApiNavigationQuery } from 'app/api/queries/navigation/ApiNavigationQuer
 import { ApiFooterQuery } from 'app/api/queries/footer/ApiFooterQuery';
 import { FOOTER_QUERY } from 'app/api/queries/footer/footerQuery';
 import { useHome } from 'app/modules/home/hooks/useHome';
-
-function getPostCardItems(blogCardsData: CardData, index: number): JSX.Element {
-    const isEven: boolean = index % 2 == 0;
-    const paddingRight: string = isEven ? 'xl:ob-pr-16' : '';
-
-    return (
-        <div key={ blogCardsData.id }
-             className={ `xl:ob-w-1/2 ${ paddingRight } ob-pb-16` }>
-            <Card cardData={ blogCardsData }/>
-        </div>
-    );
-}
+import { getPostCardColumn } from 'app/utils/getters/getPostCardColumn';
+import { useLayout } from 'app/modules/layout/hooks/useLayout';
+import { usePostPreview } from 'app/modules/post-preview/hooks/usePostPreview';
 
 export default function Home() {
-    const {previewPostsData, footerData, navigationData, categoriesData, loadPostsData} = useHome();
+    const {footerData, navigationData} = useLayout();
+    const {categoriesData, categoryId} = useHome();
+    const {loadPostsData, previewPostsData} = usePostPreview(categoryId);
     const [hasMore, setHasMore] = useState<boolean>(false);
     const [postsData, setPostsData] = useState<Array<CardData>>([]);
     const startIndex: number = postsData.length;
-    const cardElements: Array<JSX.Element> = mapWithLast<JSX.Element, CardData>(postsData, getPostCardItems);
+    const cardElements: Array<JSX.Element> = mapWithLast<JSX.Element, CardData>(postsData, getPostCardColumn);
 
     useEffect(() => {
         const postsDataCount: number = previewPostsData.length;
@@ -59,7 +51,7 @@ export default function Home() {
         <LayoutPage navigationItemsData={ navigationData }
                     footerData={ footerData }>
             <Head>
-                <title>Title</title>
+                <title>Blog Odstresowani</title>
             </Head>
 
             <div className="ob-container ob-relative ob-mx-auto ob-mt-16">

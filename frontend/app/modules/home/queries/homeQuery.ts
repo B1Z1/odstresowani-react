@@ -1,4 +1,8 @@
 import { gql } from 'graphql-tag';
+import {
+    relatedCategoryFragment,
+    relatedCategoryFragmentName
+} from 'app/api/fragments/related-category/relatedCategoryFragment';
 
 export const HOME_QUERY = gql`
     query homeQuery {
@@ -6,10 +10,11 @@ export const HOME_QUERY = gql`
             category {
                 id
                 categories {
-                    id
-                    name
+                    ... ${ relatedCategoryFragmentName }
                 }
             }
         }
     }
+    
+    ${ relatedCategoryFragment }
 `;

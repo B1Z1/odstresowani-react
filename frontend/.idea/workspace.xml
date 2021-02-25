@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="" />
+    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/api/fragments/related-category/ApiRelatedCategoryFragment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/fragments/related-category/relatedCategoryFragment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/category/domain/CategoryQuery.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/category/domain/HookCategoryData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/category/hooks/useCategory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/category/query/categoryQuery.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/layout/domain/LayoutQuery.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/layout/hooks/useLayout.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/post-preview/domain/HookPostPreviewData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/post-preview/hooks/usePostPreview.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/getters/getPostCardColumn.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/category/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/base/16384/16387" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16387" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/../data/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/../data/pg_wal/000000010000000000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/../data/pg_xact/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/collection-types/category/ApiCollectionTypeCategory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/collection-types/category/ApiCollectionTypeCategory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/collection-types/post/BlogApiCollectionTypePost.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/collection-types/post/ApiCollectionTypePost.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/collection-types/post/BlogApiCollectionTypePostContent.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/collection-types/post/ApiCollectionTypePostContent.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/fragments/categories/blogApiCategoriesHostFragment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/fragments/categories/domain/BlogApiFragmentCategory.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/fragments/categories/domain/BlogApiFragmentHostCategory.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/fragments/post-preview/domain/BlogPostPreviewFragment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/queries/post-preview/domain/BlogPostPreviewQueryResponse.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/elements/card/Card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/card/Card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/elements/link-list/utils/getLinkListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link-list/utils/getLinkListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/elements/link/bordered/LinkBordered.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link/bordered/CustomLinkBordered.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/elements/link/bordered/LinkBorderedProps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link/bordered/CustomLinkBorderedProps.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/home/domain/HomeQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/domain/HomeQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/home/domain/HookHomeData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/domain/HookHomeData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/home/hooks/useHome.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/hooks/useHome.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/home/queries/homeQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/queries/homeQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +53,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1oimue06zpq2S8vC15ns2i8ZN5T" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -30,24 +68,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/utils/converters/custom-link" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/components/modules/category/domain" />
     <property name="ts.external.directory.path" value="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\modules\category\domain" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\utils\converters\custom-link" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\modules\footer\domain" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\modules\navigation\ui\footer\ui\util" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\modules\navigation\ui\footer\domain" />
-      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\modules\navigation\ui\footer\domain\column-types" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\modules\category\query" />
+      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\modules" />
+      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\modules\header\ui" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\modules" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\modules\navigation\ui\footer\ui\column\domain" />
-      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\modules\navigation\ui\footer\domain" />
-      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\api\components\footer\columns" />
-      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\api\components\footer\columns\empty" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -62,7 +100,8 @@
       <workItem from="1614114968255" duration="818000" />
       <workItem from="1614273815355" duration="161000" />
       <workItem from="1614274190049" duration="1086000" />
-      <workItem from="1614275392524" duration="210000" />
+      <workItem from="1614275392524" duration="683000" />
+      <workItem from="1614287652190" duration="6631000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1613795161051</created>
@@ -71,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613795161052</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Renamed all project, removed all &quot;Blog&quot; prefixes">
+      <created>1614275829702</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614275829702</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +137,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Code refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code refactor" />
+    <MESSAGE value="Renamed all project, removed all &quot;Blog&quot; prefixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed all project, removed all &quot;Blog&quot; prefixes" />
   </component>
 </project>
