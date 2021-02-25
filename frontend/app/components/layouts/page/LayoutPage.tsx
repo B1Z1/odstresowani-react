@@ -1,6 +1,6 @@
-import { BlogHeader } from 'app/components/modules/navigation/ui/header/BlogHeader';
+import { BlogHeader } from 'app/components/modules/header/BlogHeader';
 import { LayoutPageProps } from 'app/components/layouts/page/LayoutPageProps';
-import { BlogMobileSidebar } from 'app/components/modules/navigation/ui/mobile-sidebar/BlogMobileSidebar';
+import { BlogMobileSidebar } from 'app/components/modules/mobile-sidebar/BlogMobileSidebar';
 import React, { useState } from 'react';
 import { Footer } from 'app/components/modules/footer/ui/Footer';
 

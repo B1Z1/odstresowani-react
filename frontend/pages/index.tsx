@@ -39,10 +39,6 @@ export default function Home() {
     const cardElements: Array<JSX.Element> = mapWithLast<JSX.Element, CardData>(postsData, getPostCardItems);
 
     useEffect(() => {
-        setTimeout(() => setHasMore(false), 5000);
-    }, []);
-
-    useEffect(() => {
         const postsDataCount: number = previewPostsData.length;
         const isMoreThanZero: boolean = postsDataCount > 0;
 
