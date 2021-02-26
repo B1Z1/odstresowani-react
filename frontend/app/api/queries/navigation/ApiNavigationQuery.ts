@@ -1,5 +1,5 @@
 import { ApiNavigationCategoryLinkFragment } from 'app/api/components/navigation/category/ApiNavigationCategoryLinkFragment';
-import { ApiType } from 'app/api/utils/api-type/ApiType';
+import { ApiType } from 'app/utils/api-type/ApiType';
 import { ApiNavigationTypes } from 'app/api/components/navigation/ApiNavigationTypes';
 import { ApiNavigationLinkFragment } from 'app/api/components/navigation/link/ApiNavigationLinkFragment';
 
