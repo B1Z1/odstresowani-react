@@ -11,6 +11,6 @@ export interface PostQuery {
         creation_date: string;
         content: Array<PostContent>;
         creator: ApiCreatorFragment;
-        trendingStories: Array<ApiPostPreviewFragment>;
+        trendingStories: Array<{ post: ApiPostPreviewFragment }>;
     }
 }

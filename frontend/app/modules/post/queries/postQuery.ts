@@ -11,7 +11,7 @@ import {
 } from 'app/modules/post/components/content/text/postContentTextFragment';
 
 export const POST_QUERY = gql`
-    query postQuery($postId: !ID) {
+    query postQuery($postId: ID!) {
       post(id: $postId) {
         id
         cover_image {
@@ -45,7 +45,7 @@ export const POST_QUERY = gql`
     }
     
     ${ creatorFragment }
-    ${ postPreviewFragment }
     ${ postContentBannerFragment }
     ${ postContentTextFragment }
+    ${ postPreviewFragment }
 `;

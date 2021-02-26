@@ -1,9 +1,9 @@
 import { gql } from '@apollo/client';
 
-export const creatorFragmentName = 'postPreview';
+export const creatorFragmentName = 'creatorFragment';
 
 export const creatorFragment = gql`
-  fragment ${ creatorFragmentName } on Post {
+  fragment ${ creatorFragmentName } on UsersPermissionsUser {
     username
     description
     avatar {

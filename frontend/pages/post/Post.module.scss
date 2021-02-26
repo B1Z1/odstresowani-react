@@ -1,0 +1,17 @@
+.ob-post {
+  &__banner {
+    height: 40vh;
+
+    @media (min-width: 1280px) {
+      height: 656px;
+    }
+  }
+
+  &__content-container {
+    max-width: 672px;
+  }
+
+  &__author-container {
+    max-width: 960px;
+  }
+}

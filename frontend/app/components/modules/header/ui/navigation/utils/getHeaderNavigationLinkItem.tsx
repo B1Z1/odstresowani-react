@@ -3,12 +3,14 @@ import { CustomLink } from 'app/components/elements/link/CustomLink';
 import React from 'react';
 
 export function getHeaderNavigationLinkItem(value: CustomLinkData, index: number, isLast: boolean): JSX.Element {
-  const itemGap: string = !isLast ? 'ob-mr-8' : '';
+    const itemGap: string = !isLast ? 'ob-mr-8' : '';
 
-  return (
-    <li key={ index }
-        className={ itemGap }>
-      <CustomLink className="ob-font-serif hover:ob-text-primary ob-transition-colors" { ...value } />
-    </li>
-  );
+    return (
+        <li key={ index }
+            className={ itemGap }>
+            <CustomLink className="ob-font-serif hover:ob-text-primary ob-transition-colors" href={ value.href }>
+                { value.value }
+            </CustomLink>
+        </li>
+    );
 }

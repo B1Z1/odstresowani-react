@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/api/fragments/creator/ApiCreatorFragment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/fragments/creator/creatorFragment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/modules/post/components/content/PostContent.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/modules/post/components/content/PostContentType.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/modules/post/components/content/banner/domain/PostContentBannerFragment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/modules/post/components/content/banner/postContentBannerFragment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/modules/post/components/content/text/domain/PostContentTextFragment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/modules/post/components/content/text/postContentTextFragment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/modules/post/queries/postQuery.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/post/[id].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/api/category/models/category.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/api/category/models/category.settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/api/post/models/post.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/api/post/models/post.settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../backend/components/post/banner.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/components/post/banner.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/1247" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/1247" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/1249" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/1249" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/1259" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/1259" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16385" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16385" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/post/domain/HookPostData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/post/domain/PostCreator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/post/hooks/usePost.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/post/Post.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16387" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16387" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16387_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16387_fsm" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16394" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16394" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16437" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16437" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16439" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16439" afterDir="false" />
@@ -28,73 +14,38 @@
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16461" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16461" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16463" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16463" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16470" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16470" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16472" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16472" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16474" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16474" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16480" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16480" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16482" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16482" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16484" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16484" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16488" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16488" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16552" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16552" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16554" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16554" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16563" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16563" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16565" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16565" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16567" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16567" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16574" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16574" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16592" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16592" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16594" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16594" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16603" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16603" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16667" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16667" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16669" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16669" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16678" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16678" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16680" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16680" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/base/16384/16682" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16682" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/base/16384/16684" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16684" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/base/16384/16693" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16693" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16695" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16695" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16697" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16697" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/16704" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16704" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2224" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2224" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2579" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2579" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2604" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2604" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2606" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2606" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2608" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2608" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2610" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2610" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2619" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2619" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2620" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2620" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2656" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2656" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2657" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2657" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2658" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2658" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2659" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2659" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2662" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2662" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2663" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2663" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2664" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2664" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2665" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2665" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2666" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2666" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2667" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2667" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2673" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2673" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2674" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2674" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2678" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2678" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2679" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2679" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2703" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2703" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2704" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2704" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/base/16384/2840" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2840" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2840_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2840_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2841" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2841" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/3455" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/3455" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/5002" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/5002" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/../data/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/pg_subtrans/0000" beforeDir="false" afterPath="$PROJECT_DIR$/../data/pg_subtrans/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/../data/pg_wal/000000010000000000000001" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/../data/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/collection-types/category/ApiCollectionTypeCategory.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/collection-types/post/ApiCollectionTypePost.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/collection-types/post/ApiCollectionTypePostContent.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/components/BlogApiComponentMedia.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/components/footer/columns/ApiNavigationFooterColumn.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/components/footer/columns/ApiNavigationFooterColumn.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/components/media/BlogApiComponentMediaImageSource.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/components/navigation/ApiNavigationType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/components/navigation/ApiNavigationType.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/components/post/banner/BlogApiComponentPostBanner.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/components/post/text/BlogApiComponentPostText.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/queries/navigation/ApiNavigationQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/queries/navigation/ApiNavigationQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/utils/api-type/ApiType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/api-type/ApiType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/fragments/creator/creatorFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/fragments/creator/creatorFragment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/elements/link-list/utils/getLinkListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link-list/utils/getLinkListItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/elements/link/CustomLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link/CustomLink.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/elements/link/CustomLinkProps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link/CustomLinkProps.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/elements/link/bordered/CustomLinkBordered.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link/bordered/CustomLinkBordered.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/elements/link/bordered/CustomLinkBorderedProps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link/bordered/CustomLinkBorderedProps.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modules/footer/ui/column/ui/FooterColumn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/footer/ui/column/ui/FooterColumn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modules/footer/ui/util/getBottomNavigationItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/footer/ui/util/getBottomNavigationItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modules/header/ui/navigation/utils/getHeaderNavigationLinkItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/ui/navigation/utils/getHeaderNavigationLinkItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modules/mobile-sidebar/utils/getMobileLinkItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/mobile-sidebar/utils/getMobileLinkItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/post/domain/PostQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/post/domain/PostQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/post/queries/postQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/post/queries/postQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/getters/getPostCardColumn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/getters/getPostCardColumn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/post/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/post/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +56,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="SCSS File" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -127,17 +79,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/modules/post/components/content/text" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/components/elements/link/with-icon" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="ts.external.directory.path" value="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\elements\link\with-icon" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\modules\post\components\content\text" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\modules\post\components\content" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\modules\post\fragments\cover-image" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\api\fragments\creator" />
-      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\modules\category\domain" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\modules\post\components\content\banner\domain" />
@@ -160,7 +113,7 @@
       <workItem from="1614273815355" duration="161000" />
       <workItem from="1614274190049" duration="1086000" />
       <workItem from="1614275392524" duration="683000" />
-      <workItem from="1614287652190" duration="8644000" />
+      <workItem from="1614287652190" duration="17229000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1613795161051</created>
@@ -183,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614295709269</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created model for post query">
+      <created>1614299106057</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614299106057</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,6 +165,7 @@
     <MESSAGE value="Code refactor" />
     <MESSAGE value="Renamed all project, removed all &quot;Blog&quot; prefixes" />
     <MESSAGE value="Created categories page with generic hooks useCategory, usePostPreview, useLayout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created categories page with generic hooks useCategory, usePostPreview, useLayout" />
+    <MESSAGE value="Created model for post query" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created model for post query" />
   </component>
 </project>

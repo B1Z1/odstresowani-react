@@ -17,9 +17,10 @@ export function FooterColumn(props: FooterColumnProps) {
                 <li key={ index }
                     className={ bottomMargin }>
                     <CustomLink
-                        className={ `${ fontSize } ob-text-white hover:ob-opacity-50 ob-transition-opacity` }
-                        { ...value }
-                    />
+                        href={ value.href }
+                        className={ `${ fontSize } ob-text-white hover:ob-opacity-50 ob-transition-opacity` }>
+                        { value.value }
+                    </CustomLink>
                 </li>
             );
         }

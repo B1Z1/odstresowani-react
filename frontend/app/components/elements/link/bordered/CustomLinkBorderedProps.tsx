@@ -1,5 +1,5 @@
 import { HTMLAttributes } from 'react';
-import { CustomLinkData } from 'app/components/elements/link/CustomLinkData';
+import { CustomLinkProps } from 'app/components/elements/link/CustomLinkProps';
 
-export interface CustomLinkBorderedProps extends CustomLinkData, HTMLAttributes<HTMLLinkElement> {
+export interface CustomLinkBorderedProps extends CustomLinkProps, HTMLAttributes<HTMLLinkElement> {
 }
