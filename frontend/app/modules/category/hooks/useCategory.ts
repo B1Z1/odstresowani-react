@@ -4,7 +4,7 @@ import { CustomLinkData } from 'app/components/elements/link/CustomLinkData';
 import { CategoryQuery } from 'app/modules/category/domain/CategoryQuery';
 import { CATEGORY_QUERY } from 'app/modules/category/query/categoryQuery';
 import { SEOData } from 'app/components/elements/seo/domain/SEOData';
-import { convertSeoApiToSeoData } from 'app/utils/components/seo/convertSeoApiToSeoData';
+import { convertSeoApiToSeoData } from 'app/utils/seo/convertSeoApiToSeoData';
 import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
 
 export function useCategory(categoryId: string): HookCategoryData {

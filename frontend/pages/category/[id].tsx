@@ -18,7 +18,7 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 import { useEffect, useState } from 'react';
 import { CardData } from 'app/components/elements/card/CardData';
 import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
-import { getPostCardColumn } from 'app/utils/components/post-card/getPostCardColumn';
+import { getPostCardColumn } from 'app/utils/ui/post-card/getPostCardColumn';
 import { ParsedUrlQuery } from 'querystring';
 
 export default function Category({categoryId}: { categoryId: string }) {

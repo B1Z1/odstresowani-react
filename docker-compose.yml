@@ -4,6 +4,7 @@ services:
     image: strapi/strapi
     restart: unless-stopped
     environment:
+      NODE_ENV: production
       DATABASE_CLIENT: postgres
       DATABASE_NAME: strapi
       DATABASE_HOST: postgres
@@ -16,6 +17,7 @@ services:
       - '1337:1337'
     depends_on:
       - postgres
+    command: 'strapi start'
 
   postgres:
     image: postgres

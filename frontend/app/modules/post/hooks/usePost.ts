@@ -9,7 +9,7 @@ import { CardData } from 'app/components/elements/card/CardData';
 import { ApiPostPreviewFragment } from 'app/api/fragments/post-preview/ApiPostPreviewFragment';
 import { BlogImageData } from 'app/utils/datas/image/BlogImageData';
 import { SEOData } from 'app/components/elements/seo/domain/SEOData';
-import { convertSeoApiToSeoData } from 'app/utils/components/seo/convertSeoApiToSeoData';
+import { convertSeoApiToSeoData } from 'app/utils/seo/convertSeoApiToSeoData';
 import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
 
 export function usePost(postId: string): HookPostData {

@@ -16,7 +16,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePost } from 'app/modules/post/hooks/usePost';
 import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
 import { CardData } from 'app/components/elements/card/CardData';
-import { getPostCardColumn } from 'app/utils/components/post-card/getPostCardColumn';
+import { getPostCardColumn } from 'app/utils/ui/post-card/getPostCardColumn';
 import { PostContent } from 'app/modules/post/components/content/PostContent';
 import { PostContentType } from 'app/modules/post/components/content/PostContentType';
 import { GetServerSideProps, GetServerSidePropsContext } from 'next';

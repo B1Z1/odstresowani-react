@@ -16,7 +16,7 @@ import { ApiNavigationQuery } from 'app/api/queries/navigation/ApiNavigationQuer
 import { ApiFooterQuery } from 'app/api/queries/footer/ApiFooterQuery';
 import { FOOTER_QUERY } from 'app/api/queries/footer/footerQuery';
 import { useHome } from 'app/modules/home/hooks/useHome';
-import { getPostCardColumn } from 'app/utils/components/post-card/getPostCardColumn';
+import { getPostCardColumn } from 'app/utils/ui/post-card/getPostCardColumn';
 import { useLayout } from 'app/modules/layout/hooks/useLayout';
 import { usePostPreview } from 'app/modules/post-preview/hooks/usePostPreview';
 

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="" />
+    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/category/hooks/useCategory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/category/hooks/useCategory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/home/hooks/useHome.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/hooks/useHome.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/post/hooks/usePost.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/post/hooks/usePost.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/components/post-card/getPostCardColumn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/ui/post-card/getPostCardColumn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/components/seo/convertSeoApiToSeoData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/seo/convertSeoApiToSeoData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/category/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/post/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/post/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,11 +66,11 @@
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\modules\post\fragments\cover-image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\utils" />
+      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\utils\ui" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\utils\components\post-card" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\elements\seo\ui" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\elements\seo\domain" />
-      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\modules\post\components\content\banner\domain" />
-      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\utils" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -76,6 +89,7 @@
       <workItem from="1614287652190" duration="17229000" />
       <workItem from="1614307531240" duration="1540000" />
       <workItem from="1614380904426" duration="9817000" />
+      <workItem from="1614392826440" duration="479000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1613795161051</created>

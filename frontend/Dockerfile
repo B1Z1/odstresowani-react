@@ -15,7 +15,7 @@ RUN npm run build
 
 EXPOSE 3000
 
-#USER node
+USER node
 
-#CMD [ "pm2-runtime", "npm", "--", "dev" ]
-CMD [ "npm", "run", "dev" ]
+CMD [ "pm2-runtime", "npm", "--", "start" ]
+#CMD [ "npm", "run", "dev" ]

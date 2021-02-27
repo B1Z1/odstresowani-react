@@ -4,7 +4,7 @@ import { HOME_QUERY } from 'app/modules/home/queries/homeQuery';
 import { HookHomeData } from 'app/modules/home/domain/HookHomeData';
 import { CustomLinkData } from 'app/components/elements/link/CustomLinkData';
 import { SEOData } from 'app/components/elements/seo/domain/SEOData';
-import { convertSeoApiToSeoData } from 'app/utils/components/seo/convertSeoApiToSeoData';
+import { convertSeoApiToSeoData } from 'app/utils/seo/convertSeoApiToSeoData';
 import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
 
 export function useHome(): HookHomeData {
