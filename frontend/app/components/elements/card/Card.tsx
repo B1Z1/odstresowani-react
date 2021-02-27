@@ -12,7 +12,9 @@ export function Card(props: CardProps) {
     return (
         <Link href={ cardData.href }>
             <a className={ `${ className } ob-relative ob-flex ob-flex-col ob-w-full` }>
-                <figure className="ob-relative ob-w-full ob-h-40 sm:ob-h-60 xl:ob-h-80 ob-pointer-events-none">
+                <figure className="ob-relative ob-w-full
+                                   ob-h-40 sm:ob-h-60 xl:ob-h-80
+                                   ob-pointer-events-none">
                     <PostDate date={ cardData.date }
                               dateIconClassName="ob-fill-secondary"
                               className="ob-absolute
