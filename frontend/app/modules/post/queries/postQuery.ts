@@ -9,6 +9,7 @@ import {
     postContentTextFragment,
     postContentTextFragmentName
 } from 'app/modules/post/components/content/text/postContentTextFragment';
+import { seoFragment, seoFragmentName } from 'app/api/components/seo/seoFragment';
 
 export const POST_QUERY = gql`
     query postQuery($postId: ID!) {
@@ -41,9 +42,14 @@ export const POST_QUERY = gql`
             ...${ postPreviewFragmentName }
           }
         }
+        
+        seo {
+            ...${ seoFragmentName }
+        }
       }
     }
     
+    ${ seoFragment }
     ${ creatorFragment }
     ${ postContentBannerFragment }
     ${ postContentTextFragment }

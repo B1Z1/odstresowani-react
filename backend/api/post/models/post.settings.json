@@ -29,8 +29,8 @@
       "required": true
     },
     "category": {
-      "model": "category",
-      "via": "posts"
+      "via": "posts",
+      "model": "category"
     },
     "preview_content": {
       "type": "text",
@@ -55,6 +55,12 @@
       "plugin": "users-permissions",
       "model": "user",
       "via": "posts"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
     }
   }
 }

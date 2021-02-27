@@ -3,6 +3,7 @@ import {
     relatedCategoryFragment,
     relatedCategoryFragmentName
 } from 'app/api/fragments/related-category/relatedCategoryFragment';
+import { seoFragment, seoFragmentName } from 'app/api/components/seo/seoFragment';
 
 export const CATEGORY_QUERY = gql`
     query categoryQuery($categoryId: ID!) {
@@ -12,8 +13,12 @@ export const CATEGORY_QUERY = gql`
         categories {
             ...${ relatedCategoryFragmentName }
         }
+        seo {
+            ...${ seoFragmentName }
+        }
       }
     }
     
+    ${ seoFragment }
     ${ relatedCategoryFragment }
 `;

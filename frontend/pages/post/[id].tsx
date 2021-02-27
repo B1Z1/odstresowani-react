@@ -16,7 +16,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { usePost } from 'app/modules/post/hooks/usePost';
 import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
 import { CardData } from 'app/components/elements/card/CardData';
-import { getPostCardColumn } from 'app/utils/getters/getPostCardColumn';
+import { getPostCardColumn } from 'app/utils/components/post-card/getPostCardColumn';
 import { PostContent } from 'app/modules/post/components/content/PostContent';
 import { PostContentType } from 'app/modules/post/components/content/PostContentType';
 import { GetServerSideProps, GetServerSidePropsContext } from 'next';
@@ -24,12 +24,13 @@ import { ApolloClient, NormalizedCacheObject } from '@apollo/client';
 import * as fas from '@fortawesome/free-brands-svg-icons';
 import ReactMarkdown from 'react-markdown';
 
-function getPostContent(postContent: PostContent): JSX.Element {
+function getPostContent(postContent: PostContent, index: number): JSX.Element {
     switch (postContent.__typename) {
         case PostContentType.BANNER:
             const imageUrl: string = `/api/${ postContent.image.url }`;
             return (
-                <figure className="ob-relative ob-w-full ob-h-screen ob-mb-16">
+                <figure key={ index }
+                        className="ob-relative ob-w-full ob-h-screen ob-mb-16">
                     <img
                         className="ob-object-cover ob-w-full ob-h-full"
                         src={ imageUrl }
@@ -39,8 +40,8 @@ function getPostContent(postContent: PostContent): JSX.Element {
             );
         case PostContentType.TEXT: {
             return (
-                <div
-                    className={ `ob-relative
+                <div key={ index }
+                     className={ `ob-relative
                                 xl:ob-px-4 ob-mx-auto ob-mb-16 
                                 ob-text-center ${ styles['ob-post__content-container'] }` }>
                     <ReactMarkdown
@@ -56,14 +57,23 @@ function getPostContent(postContent: PostContent): JSX.Element {
 
 export default function Post({postId}: { postId: string }) {
     const {footerData, navigationData} = useLayout();
-    const {trendingStories, creationDate, creator, coverImage, content, title} = usePost(postId);
+    const {
+        trendingStories,
+        creationDate,
+        creator,
+        coverImage,
+        content,
+        title,
+        seo
+    } = usePost(postId);
     const cardElements: Array<JSX.Element> = mapWithLast<JSX.Element, CardData>(trendingStories, getPostCardColumn);
     const convertedContent: Array<JSX.Element> = content.map(getPostContent);
-    const facebookUrl: string = `https://www.facebook.com/sharer/sharer.php?u=${ window.location.href }`;
-    const twitterUrl: string = `https://twitter.com/share?url=${ window.location.href }`;
+    const facebookUrl: string = `https://www.facebook.com/sharer/sharer.php?u=${ seo.pageUrl }`;
+    const twitterUrl: string = `https://twitter.com/share?url=${ seo.pageUrl }`;
 
     return (
-        <LayoutPage navigationItemsData={ navigationData }
+        <LayoutPage seoData={ seo }
+                    navigationItemsData={ navigationData }
                     footerData={ footerData }>
             <figure className={ `ob-relative ob-w-full ${ styles['ob-post__banner'] }` }>
                 <img className="ob-object-cover ob-w-full ob-h-full"

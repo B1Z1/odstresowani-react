@@ -3,6 +3,7 @@ import {
     relatedCategoryFragment,
     relatedCategoryFragmentName
 } from 'app/api/fragments/related-category/relatedCategoryFragment';
+import { seoFragment, seoFragmentName } from 'app/api/components/seo/seoFragment';
 
 export const HOME_QUERY = gql`
     query homeQuery {
@@ -13,8 +14,13 @@ export const HOME_QUERY = gql`
                     ... ${ relatedCategoryFragmentName }
                 }
             }
+            
+            seo {
+                ...${ seoFragmentName }
+            }
         }
     }
     
     ${ relatedCategoryFragment }
+    ${ seoFragment }
 `;

@@ -3,13 +3,15 @@ import { LayoutPageProps } from 'app/components/layouts/page/LayoutPageProps';
 import { MobileSidebar } from 'app/components/modules/mobile-sidebar/MobileSidebar';
 import React, { useState } from 'react';
 import { Footer } from 'app/components/modules/footer/ui/Footer';
+import { SEO } from 'app/components/elements/seo/ui/SEO';
 
 export default function LayoutPage(props: LayoutPageProps) {
-    const {children, navigationItemsData, footerData} = props;
+    const {children, navigationItemsData, footerData, seoData} = props;
     const [isMobileNavigationActive, setMobileNavigation] = useState<boolean>(false);
 
     return (
         <>
+            <SEO  { ...seoData } />
             <Header navigationItemsData={ navigationItemsData }
                     isMobileNavigationActive={ isMobileNavigationActive }
                     onMobileButtonClick={ setMobileNavigation }/>

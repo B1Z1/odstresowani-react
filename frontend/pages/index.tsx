@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import LayoutPage from 'app/components/layouts/page/LayoutPage';
 import { LinkList } from 'app/components/elements/link-list/LinkList';
 import { ApolloClient, NormalizedCacheObject } from '@apollo/client';
@@ -17,13 +16,13 @@ import { ApiNavigationQuery } from 'app/api/queries/navigation/ApiNavigationQuer
 import { ApiFooterQuery } from 'app/api/queries/footer/ApiFooterQuery';
 import { FOOTER_QUERY } from 'app/api/queries/footer/footerQuery';
 import { useHome } from 'app/modules/home/hooks/useHome';
-import { getPostCardColumn } from 'app/utils/getters/getPostCardColumn';
+import { getPostCardColumn } from 'app/utils/components/post-card/getPostCardColumn';
 import { useLayout } from 'app/modules/layout/hooks/useLayout';
 import { usePostPreview } from 'app/modules/post-preview/hooks/usePostPreview';
 
 export default function Home() {
     const {footerData, navigationData} = useLayout();
-    const {categoriesData, categoryId} = useHome();
+    const {categoriesData, categoryId, seoData} = useHome();
     const {loadPostsData, previewPostsData} = usePostPreview(categoryId);
     const [hasMore, setHasMore] = useState<boolean>(false);
     const [postsData, setPostsData] = useState<Array<CardData>>([]);
@@ -48,11 +47,9 @@ export default function Home() {
     }
 
     return (
-        <LayoutPage navigationItemsData={ navigationData }
+        <LayoutPage seoData={ seoData }
+                    navigationItemsData={ navigationData }
                     footerData={ footerData }>
-            <Head>
-                <title>Blog Odstresowani</title>
-            </Head>
 
             <div className="ob-container ob-relative ob-mx-auto ob-mt-16">
                 <div className="xl:ob-w-3/4 ob-mb-24">

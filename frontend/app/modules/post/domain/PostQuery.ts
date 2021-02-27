@@ -2,6 +2,7 @@ import { PostCoverImage } from 'app/modules/post/domain/PostCoverImage';
 import { PostContent } from 'app/modules/post/components/content/PostContent';
 import { ApiCreatorFragment } from 'app/api/fragments/creator/ApiCreatorFragment';
 import { ApiPostPreviewFragment } from 'app/api/fragments/post-preview/ApiPostPreviewFragment';
+import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
 
 export interface PostQuery {
     post: {
@@ -12,5 +13,6 @@ export interface PostQuery {
         content: Array<PostContent>;
         creator: ApiCreatorFragment;
         trendingStories: Array<{ post: ApiPostPreviewFragment }>;
+        seo: ApiSEOFragment;
     }
 }

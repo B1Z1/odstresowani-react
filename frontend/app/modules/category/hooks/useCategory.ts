@@ -3,6 +3,9 @@ import { useQuery } from '@apollo/client';
 import { CustomLinkData } from 'app/components/elements/link/CustomLinkData';
 import { CategoryQuery } from 'app/modules/category/domain/CategoryQuery';
 import { CATEGORY_QUERY } from 'app/modules/category/query/categoryQuery';
+import { SEOData } from 'app/components/elements/seo/domain/SEOData';
+import { convertSeoApiToSeoData } from 'app/utils/components/seo/convertSeoApiToSeoData';
+import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
 
 export function useCategory(categoryId: string): HookCategoryData {
     const {data: categoryData} = useQuery<CategoryQuery>(
@@ -17,9 +20,15 @@ export function useCategory(categoryId: string): HookCategoryData {
                 value: category.name
             };
         }) || [];
+    const convertedSeo: SEOData = convertSeoApiToSeoData(
+        categoryData?.category?.seo as ApiSEOFragment,
+        `/category/${categoryId}`,
+        'category'
+    );
 
     return {
         categoryName,
-        categoriesData: convertedCategoriesData
+        categoriesData: convertedCategoriesData,
+        seoData: convertedSeo
     };
 }

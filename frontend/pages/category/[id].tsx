@@ -13,18 +13,17 @@ import { useLayout } from 'app/modules/layout/hooks/useLayout';
 import LayoutPage from 'app/components/layouts/page/LayoutPage';
 import { usePostPreview } from 'app/modules/post-preview/hooks/usePostPreview';
 import { useCategory } from 'app/modules/category/hooks/useCategory';
-import Head from 'next/head';
 import { LinkList } from 'app/components/elements/link-list/LinkList';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { useEffect, useState } from 'react';
 import { CardData } from 'app/components/elements/card/CardData';
 import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
-import { getPostCardColumn } from 'app/utils/getters/getPostCardColumn';
+import { getPostCardColumn } from 'app/utils/components/post-card/getPostCardColumn';
 import { ParsedUrlQuery } from 'querystring';
 
 export default function Category({categoryId}: { categoryId: string }) {
     const {footerData, navigationData} = useLayout();
-    const {categoryName, categoriesData} = useCategory(categoryId);
+    const {categoriesData, seoData} = useCategory(categoryId);
     const {loadPostsData, previewPostsData} = usePostPreview(categoryId);
     const [hasMore, setHasMore] = useState<boolean>(false);
     const [postsData, setPostsData] = useState<Array<CardData>>([]);
@@ -54,12 +53,9 @@ export default function Category({categoryId}: { categoryId: string }) {
     }
 
     return (
-        <LayoutPage navigationItemsData={ navigationData }
+        <LayoutPage seoData={ seoData }
+                    navigationItemsData={ navigationData }
                     footerData={ footerData }>
-            <Head>
-                <title>Blog Odstresowani - { categoryName }</title>
-            </Head>
-
             <div className="ob-container ob-relative ob-mx-auto ob-mt-16">
                 <div className="xl:ob-w-3/4 ob-mb-24">
                     <p className="ob-mb-4 ob-text-xl xl:ob-text-2xl">

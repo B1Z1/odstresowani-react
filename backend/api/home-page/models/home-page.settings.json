@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "homePage",
   "info": {
-    "name": "Home Page"
+    "name": "Home Page",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -12,6 +13,12 @@
   "attributes": {
     "category": {
       "model": "category"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
     }
   }
 }

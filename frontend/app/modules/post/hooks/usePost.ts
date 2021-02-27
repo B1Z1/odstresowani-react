@@ -8,6 +8,9 @@ import { PostCreator } from 'app/modules/post/domain/PostCreator';
 import { CardData } from 'app/components/elements/card/CardData';
 import { ApiPostPreviewFragment } from 'app/api/fragments/post-preview/ApiPostPreviewFragment';
 import { BlogImageData } from 'app/utils/datas/image/BlogImageData';
+import { SEOData } from 'app/components/elements/seo/domain/SEOData';
+import { convertSeoApiToSeoData } from 'app/utils/components/seo/convertSeoApiToSeoData';
+import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
 
 export function usePost(postId: string): HookPostData {
     const {data: postData} = useQuery<PostQuery>(
@@ -21,7 +24,7 @@ export function usePost(postId: string): HookPostData {
             const imageData: BlogImageData = {
                 title: value.post.cover_image.alternativeText,
                 alt: value.post.cover_image.alternativeText,
-                src: `/api/${value.post.cover_image.url}`
+                src: `/api/${ value.post.cover_image.url }`
             };
 
             return {
@@ -35,9 +38,15 @@ export function usePost(postId: string): HookPostData {
         }) || [];
     const convertedCreator: PostCreator = {
         name: postData?.post.creator.username as string,
-        avatarUrl: `/api/${postData?.post.creator.avatar.url}`,
+        avatarUrl: `/api/${ postData?.post.creator.avatar.url }`,
         description: postData?.post.creator.description as string
     };
+    const pageSuffix: string = `/post/${ postId }`;
+    const convertedSeo: SEOData = convertSeoApiToSeoData(
+        postData?.post.seo as ApiSEOFragment,
+        pageSuffix,
+        'article'
+    );
 
     return {
         title: postData?.post.title as string,
@@ -45,6 +54,7 @@ export function usePost(postId: string): HookPostData {
         coverImage: postData?.post.cover_image as PostCoverImage,
         creator: convertedCreator,
         creationDate: creationDate,
-        trendingStories: convertedTrendingStories
+        trendingStories: convertedTrendingStories,
+        seo: convertedSeo
     };
 }
