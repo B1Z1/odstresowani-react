@@ -17,7 +17,8 @@ export function Header(props: HeaderProps) {
         <header
             className="ob-fixed ob-top-0 ob-right-0 ob-left-0
                  ob-flex ob-justify-between ob-items-center
-                 ob-px-6 ob-py-4 ob-border-b ob-border-secondary ob-bg-white ob-z-50">
+                 ob-px-6 ob-py-4
+                 ob-border-b ob-border-secondary ob-bg-white ob-z-50">
             <div className="ob-w-auto xl:ob-w-1/6">
                 <HeaderLogo/>
             </div>

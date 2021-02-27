@@ -7,7 +7,7 @@ export function CustomLink(props: CustomLinkProps) {
 
     return (
         <Link href={ props.href }>
-            <a className={ className }>
+            <a target={ props.target } className={ className }>
                 { props.children }
             </a>
         </Link>

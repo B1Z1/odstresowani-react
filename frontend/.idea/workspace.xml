@@ -2,48 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/modules/post/domain/HookPostData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/modules/post/domain/PostCreator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/modules/post/hooks/usePost.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/post/Post.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16387" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16387" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16394" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16394" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16437" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16437" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16439" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16439" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16443" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16443" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16461" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16461" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16463" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16463" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16470" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16470" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16554" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16554" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16565" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16565" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16567" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16567" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16574" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16574" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16669" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16669" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16682" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16682" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16684" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16684" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16693" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16693" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16695" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16695" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16697" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16697" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/16704" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/16704" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/base/16384/2840" beforeDir="false" afterPath="$PROJECT_DIR$/../data/base/16384/2840" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/../data/global/pg_control" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../data/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/../data/pg_wal/000000010000000000000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../data/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/../data/pg_xact/0000" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/fragments/creator/creatorFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/fragments/creator/creatorFragment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/elements/link-list/utils/getLinkListItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link-list/utils/getLinkListItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/elements/link/CustomLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link/CustomLink.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/elements/link/CustomLinkProps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link/CustomLinkProps.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/elements/link/bordered/CustomLinkBordered.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link/bordered/CustomLinkBordered.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/elements/link/bordered/CustomLinkBorderedProps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link/bordered/CustomLinkBorderedProps.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/footer/ui/column/ui/FooterColumn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/footer/ui/column/ui/FooterColumn.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/footer/ui/util/getBottomNavigationItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/footer/ui/util/getBottomNavigationItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/header/ui/navigation/utils/getHeaderNavigationLinkItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/ui/navigation/utils/getHeaderNavigationLinkItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modules/mobile-sidebar/utils/getMobileLinkItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/mobile-sidebar/utils/getMobileLinkItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/post/domain/PostQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/post/domain/PostQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/post/queries/postQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/post/queries/postQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modules/header/ui/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/ui/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modules/header/ui/logo/HeaderLogo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/ui/logo/HeaderLogo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/utils/getters/getPostCardColumn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/getters/getPostCardColumn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/next-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/post/Post.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/post/Post.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/post/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/post/[id].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
@@ -81,6 +53,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/components/elements/link/with-icon" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.tslint" />
     <property name="ts.external.directory.path" value="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -114,6 +91,8 @@
       <workItem from="1614274190049" duration="1086000" />
       <workItem from="1614275392524" duration="683000" />
       <workItem from="1614287652190" duration="17229000" />
+      <workItem from="1614307531240" duration="1540000" />
+      <workItem from="1614380904426" duration="5232000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1613795161051</created>
@@ -143,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614299106057</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Created post page">
+      <created>1614307787737</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614307787737</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +152,11 @@
     <MESSAGE value="Renamed all project, removed all &quot;Blog&quot; prefixes" />
     <MESSAGE value="Created categories page with generic hooks useCategory, usePostPreview, useLayout" />
     <MESSAGE value="Created model for post query" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created model for post query" />
+    <MESSAGE value="Created post page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created post page" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
