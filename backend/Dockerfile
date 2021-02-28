@@ -11,6 +11,8 @@ COPY . .
 
 RUN yarn build
 
+RUN chmod 755 /src/app
+
 EXPOSE 1337
 
 CMD ["yarn", "start"]
