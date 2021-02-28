@@ -15,7 +15,7 @@ COPY . .
 
 RUN yarn build
 
-RUN chmod 755 /src/app
+RUN chmod 755 /srv/app
 
 EXPOSE 1337
 
