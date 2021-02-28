@@ -18,7 +18,8 @@ export function usePost(postId: string): HookPostData {
         {variables: {postId: postId}}
     );
     const creationDate: Date = new Date(postData?.post.creation_date as string);
-    const convertedTrendingStories: Array<CardData> = postData?.post.trendingStories.map(
+    const convertedTrendingStories: Array<CardData> = !!postData && postData.post.trendingStories[0].post !== null ?
+        postData?.post.trendingStories.map(
         (value: { post: ApiPostPreviewFragment }) => {
             const creationPostPreviewDate: Date = new Date(value.post.creation_date);
             const imageData: BlogImageData = {
@@ -35,7 +36,8 @@ export function usePost(postId: string): HookPostData {
                 description: value.post.preview_content,
                 imageData: imageData
             };
-        }) || [];
+        }) :
+        [];
     const convertedCreator: PostCreator = {
         name: postData?.post.creator.username as string,
         avatarUrl: `/api/${ postData?.post.creator.avatar.url }`,
