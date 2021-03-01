@@ -1,8 +1,11 @@
 FROM nginx:alpine
 
-RUN rm /etc/nginx/conf.d/*
+WORKDIR /etc/nginx
 
-COPY ./default.conf /etc/nginx/conf.d
+RUN rm ./conf.d/*
+
+COPY ./default.conf ./conf.d
+COPY ./certs .
 
 EXPOSE 80
 

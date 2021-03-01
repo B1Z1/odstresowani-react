@@ -42,3 +42,4 @@ services:
       - strapi
     ports:
       - 80:80
+      - 443:443
