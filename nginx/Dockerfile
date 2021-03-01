@@ -5,7 +5,6 @@ WORKDIR /etc/nginx
 RUN rm ./conf.d/*
 
 COPY ./default.conf ./conf.d
-COPY ./certs .
 
 EXPOSE 80
 
