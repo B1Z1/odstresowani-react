@@ -9,6 +9,8 @@ function createApolloClient(): ApolloClient<NormalizedCacheObject> {
         `${process.env.NEXT_PUBLIC_HOST_API_URL}/graphql` :
         'http://nginx/api/graphql';
 
+    console.log('----Is browser: ', linkUri);
+
     return new ApolloClient({
         ssrMode: isBrowser,
         link: new HttpLink({
