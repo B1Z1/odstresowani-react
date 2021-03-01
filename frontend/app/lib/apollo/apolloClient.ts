@@ -7,7 +7,7 @@ function createApolloClient(): ApolloClient<NormalizedCacheObject> {
     const isBrowser: boolean = typeof window !== 'undefined';
     const linkUri: string = isBrowser ?
         `${process.env.NEXT_PUBLIC_HOST_API_URL}/graphql` :
-        'http://nginx/api/graphql';
+        'https://nginx/api/graphql';
 
     return new ApolloClient({
         ssrMode: isBrowser,
