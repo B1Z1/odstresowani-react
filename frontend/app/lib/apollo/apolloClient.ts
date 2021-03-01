@@ -4,12 +4,15 @@ import {useMemo} from 'react';
 let apolloClient: ApolloClient<NormalizedCacheObject>;
 
 function createApolloClient(): ApolloClient<NormalizedCacheObject> {
-    const isBrowser: boolean = typeof window === 'undefined';
+    const isBrowser: boolean = typeof window !== 'undefined';
+    const linkUri: string = isBrowser ?
+        `${process.env.NEXT_PUBLIC_HOST_API_URL}/graphql` :
+        'http://nginx/api/graphql';
 
     return new ApolloClient({
         ssrMode: isBrowser,
         link: new HttpLink({
-            uri: isBrowser ? `${process.env.NEXT_PUBLIC_HOST_API_URL}/graphql` : 'http://nginx/api/graphql',
+            uri: linkUri,
             credentials: 'same-origin'
         }),
         cache: new InMemoryCache()
