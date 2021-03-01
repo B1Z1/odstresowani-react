@@ -31,6 +31,8 @@ services:
       - ./frontend:/usr/app
       - /usr/app/node_modules
       - /usr/app/.next
+    environment:
+      NODE_TLS_REJECT_UNAUTHORIZED: 0
     build:
       context: frontend
       dockerfile: Dockerfile
