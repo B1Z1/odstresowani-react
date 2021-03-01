@@ -111,22 +111,22 @@ export default function Post({postId}: { postId: string }) {
                             ob-mb-16 ob-mx-auto ob-px-4
                             ${ styles['ob-post__content-container'] }` }>
                 <CustomLinkBordered
-                    className="ob-flex
-                               ob-mb-4 ob-px-8 ob-py-4 md:ob-mb-0 md:ob-mr-8
+                    className="ob-flex ob-items-center
+                               ob-py-2 ob-px-8 md:ob-py-4 ob-mb-4 md:ob-mb-0 md:ob-mr-8
                                ob-w-full md:ob-w-48 ob-font-bold ob-text-3xl"
                     href={ facebookUrl }
                     target="_blank">
                     <FontAwesomeIcon className="ob-w-5 ob-mr-10 md:ob-mr-4" icon={ fas['faFacebookF'] }/>
-                    share
+                    <span>share</span>
                 </CustomLinkBordered>
                 <CustomLinkBordered
-                    className="ob-flex
-                               ob-py-4 ob-px-8
+                    className="ob-flex ob-items-center
+                               ob-py-2 ob-px-8 md:ob-py-4
                                ob-w-full md:ob-w-48 ob-font-bold ob-text-3xl"
                     href={ twitterUrl }
                     target="_blank">
                     <FontAwesomeIcon className="ob-w-7 ob-mr-8 md:ob-mr-4" icon={ fas['faTwitter'] }/>
-                    share
+                    <span>share</span>
                 </CustomLinkBordered>
             </div>
 

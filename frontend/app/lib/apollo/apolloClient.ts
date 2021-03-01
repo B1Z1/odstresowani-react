@@ -1,5 +1,5 @@
-import { ApolloClient, HttpLink, InMemoryCache, NormalizedCacheObject } from '@apollo/client';
-import { useMemo } from 'react';
+import {ApolloClient, HttpLink, InMemoryCache, NormalizedCacheObject} from '@apollo/client';
+import {useMemo} from 'react';
 
 let apolloClient: ApolloClient<NormalizedCacheObject>;
 
@@ -9,7 +9,7 @@ function createApolloClient(): ApolloClient<NormalizedCacheObject> {
     return new ApolloClient({
         ssrMode: isBrowser,
         link: new HttpLink({
-            uri: !isBrowser ? 'http://localhost/api/graphql' : 'http://nginx/api/graphql',
+            uri: !isBrowser ? `${process.env.NEXT_PUBLIC_HOST_API_URL}/graphql` : 'http://nginx/api/graphql',
             credentials: 'same-origin'
         }),
         cache: new InMemoryCache()
