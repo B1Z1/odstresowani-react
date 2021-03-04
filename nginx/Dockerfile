@@ -1,11 +1,11 @@
 FROM nginx:alpine
 
+ARG build_type
+
 WORKDIR /etc/nginx
 
 RUN rm ./conf.d/*
 
-COPY ./default.conf ./conf.d
-
-EXPOSE 80
+COPY ./${build_type}/default.conf ./conf.d
 
 CMD [ "nginx", "-g", "daemon off;" ]

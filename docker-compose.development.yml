@@ -1,0 +1,21 @@
+version: '3'
+services:
+  strapi:
+    environment:
+      NODE_ENV: development
+      ENV_PATH: /srv/app/.env.development
+    command: yarn develop
+
+  nextjs:
+    volumes:
+      - /usr/app/node_modules
+    environment:
+      APP_ENV: development
+    command: npm run dev
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+      args:
+        build_type: development

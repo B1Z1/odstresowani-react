@@ -1,8 +1,10 @@
 version: '3'
 services:
   strapi:
+    image: strapi/strapi
     restart: unless-stopped
     environment:
+      NODE_ENV: development
       DATABASE_CLIENT: postgres
       DATABASE_NAME: strapi
       DATABASE_HOST: postgres
@@ -27,14 +29,21 @@ services:
     restart: unless-stopped
     volumes:
       - ./frontend:/usr/app
+      - /usr/app/node_modules
       - /usr/app/.next
-    ports:
-      - 3000:3000
-    build: ./frontend
+    environment:
+      NODE_TLS_REJECT_UNAUTHORIZED: 0
+    build:
+      context: frontend
+      dockerfile: Dockerfile
 
   nginx:
+    build: ./nginx
     depends_on:
       - nextjs
       - strapi
+    volumes:
+      - ./nginx/certs:/etc/nginx/certs
     ports:
       - 80:80
+      - 443:443

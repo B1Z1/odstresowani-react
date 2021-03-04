@@ -16,8 +16,3 @@ COPY . .
 RUN yarn build
 
 RUN chmod 755 /srv/app
-
-EXPOSE 1337
-
-CMD ["yarn", "start"]
-#CMD ["yarn", "develop"]

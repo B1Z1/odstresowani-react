@@ -1,0 +1,19 @@
+version: '3'
+services:
+  strapi:
+    environment:
+      NODE_ENV: production
+      ENV_PATH: /srv/app/.env.production
+    command: yarn start
+
+  nextjs:
+    environment:
+      APP_ENV: production
+    command: pm2-runtime npm -- start
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+      args:
+        build_type: production
