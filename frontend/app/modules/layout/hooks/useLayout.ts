@@ -1,7 +1,7 @@
 import { useQuery } from '@apollo/client';
 import { ApiFooterQuery } from 'app/api/queries/footer/ApiFooterQuery';
 import { FOOTER_QUERY } from 'app/api/queries/footer/footerQuery';
-import { ApiNavigationItemsQuery, ApiNavigationQuery } from 'app/api/queries/navigation/ApiNavigationQuery';
+import { ApiNavigationQuery } from 'app/api/queries/navigation/ApiNavigationQuery';
 import { NAVIGATION_QUERY } from 'app/api/queries/navigation/navigationQuery';
 import { FooterData } from 'app/components/modules/footer/domain/FooterData';
 import { convertApiFooterQueryToFooterData } from 'app/utils/converters/footer/convertApiFooterQueryToFooterData';
@@ -14,9 +14,7 @@ export function useLayout(): LayoutQuery {
     const {data: navigationData} = useQuery<ApiNavigationQuery>(NAVIGATION_QUERY);
     const convertedFooterData: FooterData | null = !!footerData ? convertApiFooterQueryToFooterData(footerData) : null;
     const convertedNavigationData: Array<CustomLinkData> =
-        navigationData?.navigation.items.map((item: ApiNavigationItemsQuery) => {
-            return convertApiNavigationItemsToCustomLinkData(item);
-        }) || [];
+        navigationData?.navigation.items.map(convertApiNavigationItemsToCustomLinkData) || [];
 
     if (!convertedFooterData) {
         console.error('Footer doesn\'t have data');

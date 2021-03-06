@@ -6,10 +6,11 @@ import {
 import { seoFragment, seoFragmentName } from 'app/api/components/seo/seoFragment';
 
 export const CATEGORY_QUERY = gql`
-    query categoryQuery($categoryId: ID!) {
-      category(id: $categoryId) {
+    query categoryQuery($categorySlug: String) {
+      categoryBySlug(slug: $categorySlug) {
         id
         name
+        slug
         categories {
             ...${ relatedCategoryFragmentName }
         }

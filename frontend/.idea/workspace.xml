@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="" />
+    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../backend/api/category/config/schema.graphql.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/api/category/config/schema.graphql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/components/navigation/category/ApiNavigationCategoryLinkFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/components/navigation/category/ApiNavigationCategoryLinkFragment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/components/navigation/category/navigationCategoryLinkFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/components/navigation/category/navigationCategoryLinkFragment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/fragments/related-category/ApiRelatedCategoryFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/fragments/related-category/ApiRelatedCategoryFragment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/fragments/related-category/relatedCategoryFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/fragments/related-category/relatedCategoryFragment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/category/domain/CategoryQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/category/domain/CategoryQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/category/domain/HookCategoryData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/category/domain/HookCategoryData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/category/hooks/useCategory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/category/hooks/useCategory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/category/query/categoryQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/category/query/categoryQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/home/hooks/useHome.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/hooks/useHome.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/layout/hooks/useLayout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/layout/hooks/useLayout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/converters/custom-link/convertApiNavigationCategoryLinkToCustomLinkData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/converters/custom-link/convertApiNavigationCategoryLinkToCustomLinkData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/category/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[slug].tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,6 +93,9 @@
       <workItem from="1614380904426" duration="9817000" />
       <workItem from="1614392826440" duration="680000" />
       <workItem from="1615028518443" duration="1194000" />
+      <workItem from="1615030160734" duration="238000" />
+      <workItem from="1615035508146" duration="691000" />
+      <workItem from="1615036546433" duration="265000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1613795161051</created>

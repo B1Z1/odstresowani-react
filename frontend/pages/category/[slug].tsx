@@ -21,9 +21,9 @@ import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
 import { getPostCardColumn } from 'app/utils/ui/post-card/getPostCardColumn';
 import { ParsedUrlQuery } from 'querystring';
 
-export default function Category({categoryId}: { categoryId: string }) {
+export default function Category({categorySlug}: { categorySlug: string }) {
     const {footerData, navigationData} = useLayout();
-    const {categoriesData, seoData} = useCategory(categoryId);
+    const {categoryId, categoriesData, seoData} = useCategory(categorySlug);
     const {loadPostsData, previewPostsData} = usePostPreview(categoryId);
     const [hasMore, setHasMore] = useState<boolean>(false);
     const [postsData, setPostsData] = useState<Array<CardData>>([]);
@@ -33,7 +33,7 @@ export default function Category({categoryId}: { categoryId: string }) {
     useEffect(() => {
         setPostsData([]);
         setHasMore(true);
-    }, [categoryId]);
+    }, [categorySlug]);
 
     useEffect(() => {
         const postsDataCount: number = previewPostsData.length;
@@ -89,20 +89,20 @@ export default function Category({categoryId}: { categoryId: string }) {
 }
 
 export const getServerSideProps: GetServerSideProps = async (context: GetServerSidePropsContext<ParsedUrlQuery>) => {
-    const categoryId: string = context.params?.id as string;
+    const categorySlug: string = context.params?.slug as string;
     const apolloClient: ApolloClient<NormalizedCacheObject> = initializeApollo();
     const categoryPageQuery = await apolloClient.query<CategoryQuery>({
         query: CATEGORY_QUERY,
         variables: {
-            categoryId: categoryId
+            categorySlug: categorySlug
         }
     });
 
-    if (!!categoryPageQuery.data.category) {
+    if (!!categoryPageQuery.data.categoryBySlug) {
         await apolloClient.query<ApiPostPreviewFragment>({
             query: POST_PREVIEW_QUERY,
             variables: {
-                categoryId: categoryId,
+                categoryId: categoryPageQuery.data.categoryBySlug.id,
                 startIndex: 0
             }
         });
@@ -119,7 +119,7 @@ export const getServerSideProps: GetServerSideProps = async (context: GetServerS
     return {
         props: {
             initialApolloState: apolloClient.cache.extract(),
-            categoryId
+            categorySlug: categorySlug
         }
     };
 };

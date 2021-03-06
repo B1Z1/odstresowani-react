@@ -2,9 +2,10 @@ import { ApiRelatedCategoryFragment } from 'app/api/fragments/related-category/A
 import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
 
 export interface CategoryQuery {
-    category: {
+    categoryBySlug: {
         id: string;
         name: string;
+        slug: string;
         categories: Array<ApiRelatedCategoryFragment>;
         seo: ApiSEOFragment;
     }

@@ -7,26 +7,27 @@ import { SEOData } from 'app/components/elements/seo/domain/SEOData';
 import { convertSeoApiToSeoData } from 'app/utils/seo/convertSeoApiToSeoData';
 import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
 
-export function useCategory(categoryId: string): HookCategoryData {
+export function useCategory(categorySlug: string): HookCategoryData {
     const {data: categoryData} = useQuery<CategoryQuery>(
         CATEGORY_QUERY,
-        {variables: {categoryId: categoryId}}
+        {variables: {categorySlug: categorySlug}}
     );
-    const categoryName: string = categoryData?.category.name as string;
+    const categoryName: string = categoryData?.categoryBySlug.name as string;
     const convertedCategoriesData: Array<CustomLinkData> =
-        categoryData?.category.categories.map((category) => {
+        categoryData?.categoryBySlug.categories.map((category) => {
             return {
-                href: `/category/${ category.id }`,
+                href: `/category/${ category.slug }`,
                 value: category.name
             };
         }) || [];
     const convertedSeo: SEOData = convertSeoApiToSeoData(
-        categoryData?.category?.seo as ApiSEOFragment,
-        `/category/${categoryId}`,
+        categoryData?.categoryBySlug?.seo as ApiSEOFragment,
+        `/category/${ categorySlug }`,
         'category'
     );
 
     return {
+        categoryId: categoryData?.categoryBySlug.id as string,
         categoryName,
         categoriesData: convertedCategoriesData,
         seoData: convertedSeo

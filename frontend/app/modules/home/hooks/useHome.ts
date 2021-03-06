@@ -13,7 +13,7 @@ export function useHome(): HookHomeData {
     const convertedCategoriesData: Array<CustomLinkData> =
         homeData?.homePage?.category.categories.map((category) => {
             return {
-                href: `/category/${ category.id }`,
+                href: `/category/${ category.slug }`,
                 value: category.name
             };
         }) || [];

@@ -6,5 +6,6 @@ export const relatedCategoryFragment = gql`
     fragment ${ relatedCategoryFragmentName } on Category {
         id
         name
+        slug
     }
 `;
