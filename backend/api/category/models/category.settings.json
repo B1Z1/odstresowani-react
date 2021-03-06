@@ -18,8 +18,8 @@
       "maxLength": 64
     },
     "posts": {
-      "via": "category",
-      "collection": "post"
+      "collection": "post",
+      "via": "category"
     },
     "categories": {
       "collection": "category"
@@ -29,6 +29,11 @@
       "repeatable": false,
       "component": "seo.seo",
       "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": false,
+      "unique": true
     }
   }
 }

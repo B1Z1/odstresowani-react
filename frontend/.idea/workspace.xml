@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +77,7 @@
       <workItem from="1614307531240" duration="1540000" />
       <workItem from="1614380904426" duration="9817000" />
       <workItem from="1614392826440" duration="680000" />
-      <workItem from="1615028518443" duration="984000" />
+      <workItem from="1615028518443" duration="1194000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1613795161051</created>
@@ -158,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615029457996</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[FRONTEND] - Change description in home page">
+      <created>1615029711922</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1615029711922</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,7 +191,8 @@
     <MESSAGE value="Created seo for all type of pages" />
     <MESSAGE value="Application is ready for production" />
     <MESSAGE value="[FRONTEND]/[BACKEND] - create new field slug for posts, create security for creator and trending stories if they don't exist" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FRONTEND]/[BACKEND] - create new field slug for posts, create security for creator and trending stories if they don't exist" />
+    <MESSAGE value="[FRONTEND] - Change description in home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FRONTEND] - Change description in home page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
