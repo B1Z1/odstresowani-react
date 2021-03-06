@@ -54,16 +54,17 @@ export default function Home() {
             <div className="ob-container ob-relative ob-mx-auto ob-mt-16">
                 <div className="xl:ob-w-3/4 ob-mb-24">
                     <p className="ob-mb-4 ob-text-xl xl:ob-text-2xl">
-                        Życie daje nam solidnie w kość. Piętrzące się obowiązki i nawał pracy często prowadzi do
-                        napiętych stanów
-                        różnej maści, innymi słowy - wszystko nas wkurza, stresuje, i drażni każdy możliwy nerw.
+                        Psychoedukacja i specjalistyczna wiedza są ważne dla dobrostanu psychicznego i
+                        zrównoważonego funkcjonowania. O zdrowie i odpowiednią higienę psychiczną można zadbać w
+                        gabinecie u psychoterapeuty. My jednak dbamy, aby każdy miał dostęp do najnowszej wiedzy i
+                        nowinek z dziedziny zdrowia psychicznego, które, mamy nadzieję, będą dla wielu wsparciem w
+                        zachowaniu równowagi w codziennym życiu.
                     </p>
                     <h1 className="ob-text-2xl xl:ob-text-3xl">
-                        Tylko co zrobić, żeby nie trzeba było skrobać naszych nerwów ze ścian? Krzyczeć? To chyba zbyt
-                        odważne.
-                        Lepić garnki? Twórcze, ale czy faktycznie pomoże? Zanurzyć się w relaksującej lekturze lub
-                        filmie? Hmm,
-                        ciekawe. Biorę.
+                        Nasi specjaliści szukają najświeższych informacji
+                        na temat odżywiania, regulacji emocji, tworzenia satysfakcjonujących związków, mindfulness,
+                        dbania o siebie i o otaczający nas świat. Znajdziecie u nas także wywiady, sprawdzone porady,
+                        odpowiedzi na trudne pytania i mnóstwo pozytywnej energii, która zmotywuje Was do działania.
                     </h1>
                 </div>
 
