@@ -2,6 +2,7 @@ version: '3'
 services:
   strapi:
     environment:
+      API_URL: https://odstresowani.pl
       NODE_ENV: production
       ENV_PATH: /srv/app/.env.production
     command: yarn start

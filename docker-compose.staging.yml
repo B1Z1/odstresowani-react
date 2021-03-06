@@ -2,6 +2,7 @@ version: '3'
 services:
   strapi:
     environment:
+      API_URL: http://localhost
       NODE_ENV: production
       ENV_PATH: /srv/app/.env.staging
     command: yarn start
