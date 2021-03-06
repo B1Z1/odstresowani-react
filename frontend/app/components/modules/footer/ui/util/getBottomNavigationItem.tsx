@@ -7,7 +7,9 @@ export function getBottomNavigationItem(blogLinkData: CustomLinkData, index: num
 
     return (
         <li key={ index } className={ margin }>
-            <CustomLink className="hover:ob-text-primary ob-transition-colors" href={ blogLinkData.href }>
+            <CustomLink className="hover:ob-text-primary ob-transition-colors"
+                        target={ blogLinkData.target }
+                        href={ blogLinkData.href }>
                 { blogLinkData.value }
             </CustomLink>
         </li>

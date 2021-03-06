@@ -7,5 +7,6 @@ export const navigationLinkFragment = gql`
         id
         name
         url
+        inNewTab
     }
 `;

@@ -18,6 +18,7 @@ export function FooterColumn(props: FooterColumnProps) {
                     className={ bottomMargin }>
                     <CustomLink
                         href={ value.href }
+                        target={ value.target }
                         className={ `${ fontSize } ob-text-white hover:ob-opacity-50 ob-transition-opacity` }>
                         { value.value }
                     </CustomLink>

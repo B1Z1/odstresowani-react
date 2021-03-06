@@ -8,7 +8,9 @@ export function getHeaderNavigationLinkItem(value: CustomLinkData, index: number
     return (
         <li key={ index }
             className={ itemGap }>
-            <CustomLink className="ob-font-serif hover:ob-text-primary ob-transition-colors" href={ value.href }>
+            <CustomLink className="ob-font-serif hover:ob-text-primary ob-transition-colors"
+                        target={ value.target }
+                        href={ value.href }>
                 { value.value }
             </CustomLink>
         </li>

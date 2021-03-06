@@ -8,5 +8,6 @@ export const navigationIconLinkFragment = gql`
         iconName
         title
         url
+        inNewTab
     }
 `;

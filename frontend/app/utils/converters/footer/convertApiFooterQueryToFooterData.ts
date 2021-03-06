@@ -46,7 +46,8 @@ export function convertApiFooterQueryToFooterData(apiFooterQuery: ApiFooterQuery
         socialMediaNavigation.map((socialMediaNavigation: ApiNavigationIconLinkFragment) => {
             return {
                 href: socialMediaNavigation.url,
-                icon: fas[socialMediaNavigation.iconName] || faQuestionCircle
+                icon: fas[socialMediaNavigation.iconName] || faQuestionCircle,
+                target: socialMediaNavigation.inNewTab ? '_blank' : '_self'
             };
         });
     const convertedBottomNavigation: Array<CustomLinkData> = bottomNavigation.map(

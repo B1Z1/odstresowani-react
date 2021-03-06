@@ -4,6 +4,7 @@ import { ApiNavigationLinkFragment } from 'app/api/components/navigation/link/Ap
 export function convertApiNavigationLinkToCustomLinkData(linkFragment: ApiNavigationLinkFragment): CustomLinkData {
     return {
         value: linkFragment.name,
-        href: linkFragment.url
+        href: linkFragment.url,
+        target: linkFragment.inNewTab ? '_blank' : '_self'
     };
 }

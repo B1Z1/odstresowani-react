@@ -38,13 +38,18 @@ export default function Category({categorySlug}: { categorySlug: string }) {
     useEffect(() => {
         const postsDataCount: number = previewPostsData.length;
         const isMoreThanZero: boolean = postsDataCount > 0;
+        let allPosts: Array<CardData>;
 
         if (!isMoreThanZero) {
             setHasMore(false);
             return;
         }
 
-        setPostsData([...postsData, ...previewPostsData]);
+        allPosts = previewPostsData.filter((postData: CardData) => {
+            return !postsData.find((originalPostsData: CardData) => originalPostsData.id === postData.id);
+        });
+
+        setPostsData([...postsData, ...allPosts]);
         setHasMore(true);
     }, [previewPostsData]);
 

@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../backend/api/category/config/schema.graphql.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/api/category/config/schema.graphql.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/components/navigation/navigation-icon-link.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/components/navigation/navigation-icon-link.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/components/navigation/navigation-link.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/components/navigation/navigation-link.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/components/navigation/category/ApiNavigationCategoryLinkFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/components/navigation/category/ApiNavigationCategoryLinkFragment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/components/navigation/category/navigationCategoryLinkFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/components/navigation/category/navigationCategoryLinkFragment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/fragments/related-category/ApiRelatedCategoryFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/fragments/related-category/ApiRelatedCategoryFragment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/fragments/related-category/relatedCategoryFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/fragments/related-category/relatedCategoryFragment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/category/domain/CategoryQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/category/domain/CategoryQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/category/domain/HookCategoryData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/category/domain/HookCategoryData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/category/hooks/useCategory.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/category/hooks/useCategory.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/category/query/categoryQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/category/query/categoryQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/home/hooks/useHome.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/hooks/useHome.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/layout/hooks/useLayout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/layout/hooks/useLayout.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/utils/converters/custom-link/convertApiNavigationCategoryLinkToCustomLinkData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/converters/custom-link/convertApiNavigationCategoryLinkToCustomLinkData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/category/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/components/navigation/icon-link/ApiNavigationIconLinkFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/components/navigation/icon-link/ApiNavigationIconLinkFragment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/components/navigation/icon-link/navigationIconLinkFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/components/navigation/icon-link/navigationIconLinkFragment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/components/navigation/link/ApiNavigationLinkFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/components/navigation/link/ApiNavigationLinkFragment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/components/navigation/link/navigationLinkFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/components/navigation/link/navigationLinkFragment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/elements/link/CustomLinkData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/elements/link/CustomLinkData.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modules/footer/ui/column/ui/FooterColumn.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/footer/ui/column/ui/FooterColumn.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modules/footer/ui/social-media-list/FooterSocialMediaItemData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/footer/ui/social-media-list/FooterSocialMediaItemData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modules/footer/ui/social-media-list/utils/getSocialMediaItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/footer/ui/social-media-list/utils/getSocialMediaItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modules/footer/ui/util/getBottomNavigationItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/footer/ui/util/getBottomNavigationItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modules/header/ui/navigation/utils/getHeaderNavigationLinkItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modules/header/ui/navigation/utils/getHeaderNavigationLinkItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/converters/custom-link/convertApiNavigationLinkToCustomLinkData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/converters/custom-link/convertApiNavigationLinkToCustomLinkData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/converters/footer/convertApiFooterQueryToFooterData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/converters/footer/convertApiFooterQueryToFooterData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/category/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +98,7 @@
       <workItem from="1615028518443" duration="1194000" />
       <workItem from="1615030160734" duration="238000" />
       <workItem from="1615035508146" duration="691000" />
-      <workItem from="1615036546433" duration="265000" />
+      <workItem from="1615036546433" duration="2056000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1613795161051</created>
@@ -181,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615029711922</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[FRONTEND]/[BACKEND] - add slug to categories">
+      <created>1615036867427</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1615036867427</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +220,8 @@
     <MESSAGE value="Application is ready for production" />
     <MESSAGE value="[FRONTEND]/[BACKEND] - create new field slug for posts, create security for creator and trending stories if they don't exist" />
     <MESSAGE value="[FRONTEND] - Change description in home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FRONTEND] - Change description in home page" />
+    <MESSAGE value="[FRONTEND]/[BACKEND] - add slug to categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FRONTEND]/[BACKEND] - add slug to categories" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

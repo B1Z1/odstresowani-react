@@ -3,4 +3,5 @@ export interface ApiNavigationIconLinkFragment {
     iconName: string;
     title: string;
     url: string;
+    inNewTab: boolean;
 }
