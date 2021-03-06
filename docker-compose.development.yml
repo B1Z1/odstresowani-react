@@ -10,8 +10,6 @@ services:
     command: yarn develop
 
   nextjs:
-    volumes:
-      - /usr/app/node_modules
     environment:
       APP_ENV: development
     command: npm run dev
