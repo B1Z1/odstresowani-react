@@ -6,6 +6,7 @@ export const postPreviewFragment = gql`
   fragment ${ postPreviewFragmentName } on Post {
       id
       title
+      slug
       preview_content
       creation_date
       cover_image {

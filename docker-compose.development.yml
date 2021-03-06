@@ -4,6 +4,9 @@ services:
     environment:
       NODE_ENV: development
       ENV_PATH: /srv/app/.env.development
+    volumes:
+      - ./backend:/srv/app
+      - /srv/app/node_modules
     command: yarn develop
 
   nextjs:

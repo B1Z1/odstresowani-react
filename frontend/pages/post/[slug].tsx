@@ -43,9 +43,9 @@ function getPostContent(postContent: PostContent, index: number): JSX.Element {
                 <div key={ index }
                      className={ `ob-relative
                                 xl:ob-px-4 ob-mx-auto ob-mb-16 
-                                ob-text-center ${ styles['ob-post__content-container'] }` }>
+                                ${ styles['ob-post__content-container'] }` }>
                     <ReactMarkdown
-                        className={ `ob-text-lg xl:ob-text-2xl ${ styles['ob-post__markdown-content'] }` }
+                        className={ `ob-text-lg xl:ob-text-xl ${ styles['ob-post__markdown-content'] }` }
                         disallowedTypes={ ['image'] }
                         source={ postContent.content }
                     />
@@ -55,7 +55,7 @@ function getPostContent(postContent: PostContent, index: number): JSX.Element {
     }
 }
 
-export default function Post({postId}: { postId: string }) {
+export default function Post({postSlug}: { postSlug: string }) {
     const {footerData, navigationData} = useLayout();
     const {
         trendingStories,
@@ -65,7 +65,7 @@ export default function Post({postId}: { postId: string }) {
         content,
         title,
         seo
-    } = usePost(postId);
+    } = usePost(postSlug);
     const cardElements: Array<JSX.Element> = mapWithLast<JSX.Element, CardData>(trendingStories, getPostCardColumn);
     const convertedContent: Array<JSX.Element> = content.map(getPostContent);
     const facebookUrl: string = `https://www.facebook.com/sharer/sharer.php?u=${ seo.pageUrl }`;
@@ -130,44 +130,48 @@ export default function Post({postId}: { postId: string }) {
                 </CustomLinkBordered>
             </div>
 
-            <div
-                className={ `ob-mx-auto ob-text-center ob-mb-16 lg:ob-mb-40 ${ styles['ob-post__author-container'] }` }>
-                <h4 className="ob-font-base ob-text-secondary ob-font-bold ob-mb-4 lg:ob-mb-8">
-                    Author:
-                </h4>
-                <figure className="ob-relative
+            { creator && (
+                <div
+                    className={ `ob-mx-auto ob-text-center ob-mb-16 lg:ob-mb-40 ${ styles['ob-post__author-container'] }` }>
+                    <h4 className="ob-font-base ob-text-secondary ob-font-bold ob-mb-4 lg:ob-mb-8">
+                        Author:
+                    </h4>
+                    <figure className="ob-relative
                                    ob-w-20 ob-h-20
                                    ob-mb-8 ob-mx-auto lg:ob-mb-12
                                    ob-rounded-full ob-overflow-hidden">
-                    <img
-                        className="ob-object-cover ob-w-full ob-h-full"
-                        src={ creator.avatarUrl }
-                        alt={ creator.name }
-                    />
-                </figure>
-                <p className="ob-text-2xl">
-                    { creator.description }
-                </p>
-            </div>
-
-            <div className="ob-container ob-mx-auto">
-                <h4 className="ob-mb-12 lg:ob-mb-16 ob-text-2xl ob-text-center">Trending stories</h4>
-                <div className="ob-flex ob-flex-wrap">
-                    { cardElements }
+                        <img
+                            className="ob-object-cover ob-w-full ob-h-full"
+                            src={ creator.avatarUrl }
+                            alt={ creator.name }
+                        />
+                    </figure>
+                    <p className="ob-text-2xl">
+                        { creator.description }
+                    </p>
                 </div>
-            </div>
+            ) }
+
+            { cardElements.length > 0 && (
+                <div className="ob-container ob-mx-auto">
+                    <h4 className="ob-mb-12 lg:ob-mb-16 ob-text-2xl ob-text-center">Trending stories</h4>
+                    <div className="ob-flex ob-flex-wrap">
+                        { cardElements }
+                    </div>
+                </div>
+            ) }
         </LayoutPage>
     );
 }
 
 export const getServerSideProps: GetServerSideProps = async (context: GetServerSidePropsContext<ParsedUrlQuery>) => {
-    const postId: string = context.params?.id as string;
+    const postSlug: string = context.params?.slug as string;
     const apolloClient: ApolloClient<NormalizedCacheObject> = initializeApollo();
 
     await apolloClient.query<PostQuery>({
         query: POST_QUERY,
         variables: {
-            postId: postId
+            postSlug: postSlug
         }
     });
 
@@ -182,7 +186,7 @@ export const getServerSideProps: GetServerSideProps = async (context: GetServerS
     return {
         props: {
             initialApolloState: apolloClient.cache.extract(),
-            postId: postId
+            postSlug: postSlug
         }
     };
 };

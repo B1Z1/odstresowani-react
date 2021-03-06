@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="" />
+    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../backend/api/post/config/schema.graphql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/post/domain/PostTrendingStory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/post/utils/convertQueryCreatorToPostCreator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/post/utils/convertTrendingStoriesToCardData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/api/category/models/category.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/api/category/models/category.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/api/post/models/post.js" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/api/post/models/post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/api/post/models/post.settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/api/post/models/post.settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/components/seo/seo.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/components/seo/seo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../backend/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../backend/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.copy.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose.development.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose.development.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/fragments/post-preview/ApiPostPreviewFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/fragments/post-preview/ApiPostPreviewFragment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/fragments/post-preview/postPreviewFragment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/fragments/post-preview/postPreviewFragment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/post/domain/HookPostData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/post/domain/HookPostData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/post/domain/PostQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/post/domain/PostQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/post/hooks/usePost.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/post/hooks/usePost.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/post/queries/postQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/post/queries/postQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/converters/blog-card/convertApiPostPreviewFragmentToCardData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/converters/blog-card/convertApiPostPreviewFragmentToCardData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/post/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/post/[slug].tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +103,7 @@
       <workItem from="1614307531240" duration="1540000" />
       <workItem from="1614380904426" duration="9817000" />
       <workItem from="1614392826440" duration="680000" />
+      <workItem from="1615028518443" duration="897000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1613795161051</created>

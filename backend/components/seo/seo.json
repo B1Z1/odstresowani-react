@@ -2,18 +2,20 @@
   "collectionName": "components_seo_seos",
   "info": {
     "name": "seo",
-    "icon": "angle-right"
+    "icon": "angle-right",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string",
       "required": true,
-      "maxLength": 100
+      "maxLength": 50
     },
     "description": {
       "type": "text",
-      "maxLength": 200
+      "maxLength": 160,
+      "required": true
     },
     "image": {
       "model": "file",

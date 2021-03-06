@@ -13,7 +13,8 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "creation_date": {
       "type": "date",
@@ -29,8 +30,8 @@
       "required": true
     },
     "category": {
-      "via": "posts",
-      "model": "category"
+      "model": "category",
+      "via": "posts"
     },
     "preview_content": {
       "type": "text",
@@ -48,8 +49,7 @@
       "repeatable": true,
       "component": "post.tending-stories",
       "max": 2,
-      "required": true,
-      "min": 2
+      "required": true
     },
     "creator": {
       "plugin": "users-permissions",
@@ -61,6 +61,10 @@
       "repeatable": false,
       "component": "seo.seo",
       "required": true
+    },
+    "slug": {
+      "type": "string",
+      "unique": true
     }
   }
 }

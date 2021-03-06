@@ -12,9 +12,10 @@ import {
 import { seoFragment, seoFragmentName } from 'app/api/components/seo/seoFragment';
 
 export const POST_QUERY = gql`
-    query postQuery($postId: ID!) {
-      post(id: $postId) {
+    query postQuery($postSlug: String) {
+      postBySlug(slug: $postSlug) {
         id
+        slug
         cover_image {
           alternativeText
           url

@@ -1,18 +1,19 @@
 import { PostCoverImage } from 'app/modules/post/domain/PostCoverImage';
 import { PostContent } from 'app/modules/post/components/content/PostContent';
 import { ApiCreatorFragment } from 'app/api/fragments/creator/ApiCreatorFragment';
-import { ApiPostPreviewFragment } from 'app/api/fragments/post-preview/ApiPostPreviewFragment';
 import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
+import { PostTrendingStory } from 'app/modules/post/domain/PostTrendingStory';
 
 export interface PostQuery {
-    post: {
+    postBySlug: {
         id: string;
+        slug: string;
         cover_image: PostCoverImage;
         title: string;
         creation_date: string;
         content: Array<PostContent>;
-        creator: ApiCreatorFragment;
-        trendingStories: Array<{ post: ApiPostPreviewFragment }>;
+        trendingStories: Array<PostTrendingStory>;
         seo: ApiSEOFragment;
+        creator?: ApiCreatorFragment;
     }
 }

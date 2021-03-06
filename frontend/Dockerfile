@@ -4,6 +4,8 @@ WORKDIR /usr/app
 
 #RUN npm install --global pm2
 
+EXPOSE 3000
+
 COPY ./package*.json ./
 
 RUN rm -rf .next

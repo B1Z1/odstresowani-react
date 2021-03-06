@@ -18,8 +18,8 @@
       "maxLength": 64
     },
     "posts": {
-      "collection": "post",
-      "via": "category"
+      "via": "category",
+      "collection": "post"
     },
     "categories": {
       "collection": "category"

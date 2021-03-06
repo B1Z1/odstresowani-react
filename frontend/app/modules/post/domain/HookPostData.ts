@@ -9,7 +9,7 @@ export interface HookPostData {
     coverImage: PostCoverImage;
     creationDate: Date;
     content: Array<PostContent>;
-    creator: PostCreator;
     trendingStories: Array<CardData>;
     seo: SEOData;
+    creator: PostCreator | null;
 }
