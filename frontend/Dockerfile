@@ -2,7 +2,7 @@ FROM node:alpine
 
 WORKDIR /usr/app
 
-#RUN npm install --global pm2
+RUN npm install --global pm2
 
 EXPOSE 3000
 

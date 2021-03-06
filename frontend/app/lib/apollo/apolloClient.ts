@@ -5,6 +5,7 @@ let apolloClient: ApolloClient<NormalizedCacheObject>;
 
 function createApolloClient(): ApolloClient<NormalizedCacheObject> {
     const isBrowser: boolean = typeof window !== 'undefined';
+
     const linkUri: string = isBrowser ?
         `${process.env.NEXT_PUBLIC_HOST_API_URL}/graphql` :
         `${process.env.HOST_SSR_API_URL}/graphql`;

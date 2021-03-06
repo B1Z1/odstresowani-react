@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "docker:develop": "docker-compose -f docker-compose.yml -f docker-compose.development.yml up -d",
-    "docker:staging": "docker-compose -f docker-compose.yml -f docker-compose.stagging.yml up -d",
+    "docker:staging": "docker-compose -f docker-compose.yml -f docker-compose.staging.yml up -d",
     "docker:prod": "docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d"
   },
   "dependencies": {

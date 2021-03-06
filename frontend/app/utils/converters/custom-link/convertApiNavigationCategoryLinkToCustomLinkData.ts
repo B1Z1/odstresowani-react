@@ -4,6 +4,7 @@ import { ApiNavigationCategoryLinkFragment } from 'app/api/components/navigation
 export function convertApiNavigationCategoryLinkToCustomLinkData(linkFragment: ApiNavigationCategoryLinkFragment): CustomLinkData {
     return {
         href: `/category/${ linkFragment.category.slug }`,
-        value: linkFragment.category.name
+        value: linkFragment.category.name,
+        target: '_self'
     };
 }

@@ -17,7 +17,8 @@ export function useCategory(categorySlug: string): HookCategoryData {
         categoryData?.categoryBySlug.categories.map((category) => {
             return {
                 href: `/category/${ category.slug }`,
-                value: category.name
+                value: category.name,
+                target: '_self'
             };
         }) || [];
     const convertedSeo: SEOData = convertSeoApiToSeoData(

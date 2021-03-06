@@ -1,4 +1,4 @@
-require('dotenv').config({path: `./.env.${process.env.APP_ENV}`})
+require('dotenv').config({path: `./environments/.env.${process.env.APP_ENV}`});
 
 module.exports = {
     webpackDevMiddleware: config => {
@@ -14,6 +14,8 @@ module.exports = {
     },
     env: {
         NEXT_PUBLIC_HOST_URL: process.env.NEXT_PUBLIC_HOST_URL,
-        NEXT_PUBLIC_HOST_API_URL: process.env.NEXT_PUBLIC_HOST_API_URL
+        NEXT_PUBLIC_HOST_API_URL: process.env.NEXT_PUBLIC_HOST_API_URL,
+        HOST_SSR_URL: process.env.HOST_SSR_URL,
+        HOST_SSR_API_URL: process.env.HOST_SSR_API_URL
     }
 }

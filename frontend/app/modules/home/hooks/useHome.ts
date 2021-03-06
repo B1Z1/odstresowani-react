@@ -14,7 +14,8 @@ export function useHome(): HookHomeData {
         homeData?.homePage?.category.categories.map((category) => {
             return {
                 href: `/category/${ category.slug }`,
-                value: category.name
+                value: category.name,
+                target: '_self'
             };
         }) || [];
     const convertedSeo: SEOData = convertSeoApiToSeoData(

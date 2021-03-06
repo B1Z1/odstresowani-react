@@ -3,12 +3,12 @@ services:
   strapi:
     environment:
       NODE_ENV: production
-      ENV_PATH: /srv/app/.env.stagging
+      ENV_PATH: /srv/app/.env.staging
     command: yarn start
 
   nextjs:
     environment:
-      APP_ENV: stagging
+      APP_ENV: staging
     command: npm run start
 
   nginx:
@@ -16,4 +16,4 @@ services:
       context: ./nginx
       dockerfile: Dockerfile
       args:
-        build_type: stagging
+        build_type: staging
