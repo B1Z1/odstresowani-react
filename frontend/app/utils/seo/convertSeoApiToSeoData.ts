@@ -6,7 +6,7 @@ export function convertSeoApiToSeoData(seoApiData: ApiSEOFragment, pageSuffix: s
         title: `${ seoApiData.title } | Odstresowani Blog`,
         description: seoApiData.description,
         keywords: seoApiData.keywords,
-        imageSrc: `${ process.env.NEXT_PUBLIC_HOST_API_URL }/${ seoApiData.image.url }`,
+        imageSrc: `${ process.env.NEXT_PUBLIC_HOST_API_URL }${ seoApiData.image.url }`,
         pageUrl: `${ process.env.NEXT_PUBLIC_HOST_URL }${ pageSuffix }`,
         contentType: contentType
     };

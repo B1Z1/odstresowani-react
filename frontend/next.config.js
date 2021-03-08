@@ -1,4 +1,4 @@
-require('dotenv').config({path: `./environments/.env.${process.env.APP_ENV}`});
+require('dotenv').config({path: `/usr/app/environments/.env.${process.env.APP_ENV}`});
 
 module.exports = {
     webpackDevMiddleware: config => {
