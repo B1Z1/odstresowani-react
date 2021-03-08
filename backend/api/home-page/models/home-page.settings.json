@@ -11,9 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "category": {
-      "model": "category"
-    },
     "seo": {
       "type": "component",
       "repeatable": false,
