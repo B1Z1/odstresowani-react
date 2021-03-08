@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/api/queries/post-preview-by-category/ApiPostPreviewByCategoryQuery.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/queries/post-preview-by-category/ApiPostPreviewByCategoryQueryParams.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/queries/post-preview-by-category/postPreviewByCategoryQuery.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/post-preview-by-category/domain/HookPostPreviewByCategoryData.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/modules/post-preview/hooks/usePostPreviewByCategory.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/queries/post-preview/ApiPostPreviewQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/queries/post-preview/ApiPostPreviewQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/queries/post-preview/ApiPostPreviewQueryParams.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/queries/post-preview/ApiPostPreviewQueryParams.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/queries/post-preview/postPreviewQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/queries/post-preview/postPreviewQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/home/domain/HookHomeData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/domain/HookHomeData.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/home/hooks/useHome.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/hooks/useHome.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/home/queries/homeQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/queries/homeQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modules/post-preview/hooks/usePostPreview.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/post-preview-by-category/hooks/usePostPreviewByCategory.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/category/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[slug].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../nginx/development/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../nginx/development/default.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/components/elements/seo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/modules" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -48,11 +64,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\modules" />
+      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\api\queries" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\elements\seo" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\components\elements\link\with-icon" />
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\modules\post\components\content\text" />
-      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\modules\post\components\content" />
-      <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\modules\post\fragments\cover-image" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ilya\Desktop\Projects\odstresowani\frontend\app\utils" />
@@ -83,6 +99,9 @@
       <workItem from="1615030160734" duration="238000" />
       <workItem from="1615035508146" duration="691000" />
       <workItem from="1615036546433" duration="2231000" />
+      <workItem from="1615241463472" duration="344000" />
+      <workItem from="1615241858616" duration="270000" />
+      <workItem from="1615242459854" duration="1943000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1613795161051</created>

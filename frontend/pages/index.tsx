@@ -1,5 +1,4 @@
 import LayoutPage from 'app/components/layouts/page/LayoutPage';
-import { LinkList } from 'app/components/elements/link-list/LinkList';
 import { ApolloClient, NormalizedCacheObject } from '@apollo/client';
 import { GetServerSideProps } from 'next';
 import { initializeApollo } from 'app/lib/apollo/apolloClient';
@@ -7,7 +6,6 @@ import { CardData } from 'app/components/elements/card/CardData';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
 import { useEffect, useState } from 'react';
-import { POST_PREVIEW_QUERY } from 'app/api/queries/post-preview/postPreviewQuery';
 import { HOME_QUERY } from 'app/modules/home/queries/homeQuery';
 import { HomeQuery } from 'app/modules/home/domain/HomeQuery';
 import { ApiPostPreviewFragment } from 'app/api/fragments/post-preview/ApiPostPreviewFragment';
@@ -18,12 +16,13 @@ import { FOOTER_QUERY } from 'app/api/queries/footer/footerQuery';
 import { useHome } from 'app/modules/home/hooks/useHome';
 import { getPostCardColumn } from 'app/utils/ui/post-card/getPostCardColumn';
 import { useLayout } from 'app/modules/layout/hooks/useLayout';
-import { usePostPreview } from 'app/modules/post-preview/hooks/usePostPreview';
+import { POST_PREVIEW_QUERY } from 'app/api/queries/post-preview/postPreviewQuery';
+import { usePostPreview } from 'app/modules/post-preview/hooks/usePostPreviewByCategory';
 
 export default function Home() {
     const {footerData, navigationData} = useLayout();
-    const {categoriesData, categoryId, seoData} = useHome();
-    const {loadPostsData, previewPostsData} = usePostPreview(categoryId);
+    const {seoData} = useHome();
+    const {loadPostsData, previewPostsData} = usePostPreview();
     const [hasMore, setHasMore] = useState<boolean>(false);
     const [postsData, setPostsData] = useState<Array<CardData>>([]);
     const startIndex: number = postsData.length;
@@ -73,10 +72,6 @@ export default function Home() {
                     </h1>
                 </div>
 
-                <LinkList className="ob-mb-12"
-                          title="Kategorie"
-                          links={ categoriesData }/>
-
                 <InfiniteScroll className="ob-flex ob-flex-wrap"
                                 dataLength={ cardElements.length }
                                 next={ fetchData }
@@ -91,21 +86,16 @@ export default function Home() {
 
 export const getServerSideProps: GetServerSideProps = async () => {
     const apolloClient: ApolloClient<NormalizedCacheObject> = initializeApollo();
-    const homePageQuery = await apolloClient.query<HomeQuery>({
+    await apolloClient.query<HomeQuery>({
         query: HOME_QUERY
     });
 
-    if (!!homePageQuery.data.homePage?.category) {
-        const categoryId: string = homePageQuery.data.homePage.category.id;
-
-        await apolloClient.query<ApiPostPreviewFragment>({
-            query: POST_PREVIEW_QUERY,
-            variables: {
-                categoryId: categoryId,
-                startIndex: 0
-            }
-        });
-    }
+    await apolloClient.query<ApiPostPreviewFragment>({
+        query: POST_PREVIEW_QUERY,
+        variables: {
+            startIndex: 0
+        }
+    });
 
     await apolloClient.query<ApiNavigationQuery>({
         query: NAVIGATION_QUERY
