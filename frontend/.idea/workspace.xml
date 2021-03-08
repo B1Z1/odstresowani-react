@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/api/queries/post-preview-by-category/ApiPostPreviewByCategoryQuery.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/queries/post-preview-by-category/ApiPostPreviewByCategoryQueryParams.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/api/queries/post-preview-by-category/postPreviewByCategoryQuery.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/modules/post-preview-by-category/domain/HookPostPreviewByCategoryData.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/modules/post-preview/hooks/usePostPreviewByCategory.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/queries/post-preview/ApiPostPreviewQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/queries/post-preview/ApiPostPreviewQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/queries/post-preview/ApiPostPreviewQueryParams.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/queries/post-preview/ApiPostPreviewQueryParams.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/queries/post-preview/postPreviewQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/queries/post-preview/postPreviewQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/home/domain/HookHomeData.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/domain/HookHomeData.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/home/hooks/useHome.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/hooks/useHome.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/home/queries/homeQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/home/queries/homeQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/modules/post-preview/hooks/usePostPreview.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/modules/post-preview-by-category/hooks/usePostPreviewByCategory.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/category/[slug].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/category/[slug].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../nginx/development/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/../nginx/development/default.conf" afterDir="false" />
-    </list>
+    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -101,7 +83,7 @@
       <workItem from="1615036546433" duration="2231000" />
       <workItem from="1615241463472" duration="344000" />
       <workItem from="1615241858616" duration="270000" />
-      <workItem from="1615242459854" duration="1943000" />
+      <workItem from="1615242459854" duration="2779000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1613795161051</created>
@@ -201,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615038665357</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="[FRONTEND/BACKEND] - Change test in category page. Display posts in home page, automatically by last date">
+      <created>1615244560536</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1615244560536</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[FRONTEND/BACKEND] - Change test in category page. Display posts in home page, automatically by last date">
+      <created>1615244584151</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1615244584151</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +228,8 @@
     <MESSAGE value="[FRONTEND] - Change description in home page" />
     <MESSAGE value="[FRONTEND]/[BACKEND] - add slug to categories" />
     <MESSAGE value="[FRONTEND]/[BACKEND] - add to navigation link target blank" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FRONTEND]/[BACKEND] - add to navigation link target blank" />
+    <MESSAGE value="[FRONTEND/BACKEND] - Change test in category page. Display posts in home page, automatically by last date" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FRONTEND/BACKEND] - Change test in category page. Display posts in home page, automatically by last date" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
