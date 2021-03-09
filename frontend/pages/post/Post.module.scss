@@ -17,10 +17,10 @@
 
   &__markdown-content {
     > * {
-      margin-bottom: 1rem;
+      @apply ob-mb-4;
 
       @media (min-width: 1280px) {
-        margin-bottom: 2rem;
+        @apply ob-mb-8;
       }
     }
 
@@ -81,23 +81,23 @@
     }
 
     ul, ol {
-      padding: 0 16px;
-
-      @media (min-width: 1280px) {
-        padding: 0;
-      }
+      @apply ob-pl-6;
     }
 
     ul {
-      list-style: disc;
+      @apply ob-list-disc;
     }
 
     ol {
-      list-style: decimal;
+      @apply ob-list-decimal;
     }
 
     li {
-      margin: 0.8rem 0;
+      @apply ob-py-1;
+    }
+
+    a {
+      @apply ob-text-primary ob-underline;
     }
   }
 }

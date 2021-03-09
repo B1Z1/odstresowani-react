@@ -11,6 +11,8 @@ services:
       DATABASE_PASSWORD: strapi
     depends_on:
       - postgres
+    volumes:
+      - ./backend/public:/srv/app/public
     build: ./backend
 
   postgres:
