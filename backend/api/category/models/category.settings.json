@@ -17,10 +17,6 @@
       "required": true,
       "maxLength": 64
     },
-    "posts": {
-      "collection": "post",
-      "via": "category"
-    },
     "categories": {
       "collection": "category"
     },
@@ -34,6 +30,10 @@
       "type": "string",
       "required": false,
       "unique": true
+    },
+    "posts": {
+      "via": "categories",
+      "collection": "post"
     }
   }
 }
