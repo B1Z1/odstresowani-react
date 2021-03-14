@@ -1,8 +1,8 @@
 import { useQuery } from '@apollo/client';
 import { PostQuery } from 'app/modules/post/domain/PostQuery';
-import { POST_QUERY } from 'app/modules/post/queries/postQuery';
+import { POST_QUERY } from 'app/modules/post/infrastructure/queries/postQuery';
 import { HookPostData } from 'app/modules/post/domain/HookPostData';
-import { PostContent } from 'app/modules/post/components/content/PostContent';
+import { PostContent } from 'app/modules/post/infrastructure/components/content/PostContent';
 import { PostCoverImage } from 'app/modules/post/domain/PostCoverImage';
 import { PostCreator } from 'app/modules/post/domain/PostCreator';
 import { CardData } from 'app/components/elements/card/CardData';

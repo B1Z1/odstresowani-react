@@ -3,7 +3,7 @@ import { ApiNavigationQuery } from 'app/api/queries/navigation/ApiNavigationQuer
 import { NAVIGATION_QUERY } from 'app/api/queries/navigation/navigationQuery';
 import { ApiFooterQuery } from 'app/api/queries/footer/ApiFooterQuery';
 import { FOOTER_QUERY } from 'app/api/queries/footer/footerQuery';
-import { POST_QUERY } from 'app/modules/post/queries/postQuery';
+import { POST_QUERY } from 'app/modules/post/infrastructure/queries/postQuery';
 import { PostQuery } from 'app/modules/post/domain/PostQuery';
 import { ParsedUrlQuery } from 'querystring';
 import LayoutPage from 'app/components/layouts/page/LayoutPage';
@@ -17,43 +17,10 @@ import { usePost } from 'app/modules/post/hooks/usePost';
 import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
 import { CardData } from 'app/components/elements/card/CardData';
 import { getPostCardColumn } from 'app/utils/ui/post-card/getPostCardColumn';
-import { PostContent } from 'app/modules/post/components/content/PostContent';
-import { PostContentType } from 'app/modules/post/components/content/PostContentType';
 import { GetServerSideProps, GetServerSidePropsContext } from 'next';
 import { ApolloClient, NormalizedCacheObject } from '@apollo/client';
 import * as fas from '@fortawesome/free-brands-svg-icons';
-import ReactMarkdown from 'react-markdown';
-
-function getPostContent(postContent: PostContent, index: number): JSX.Element {
-    switch (postContent.__typename) {
-        case PostContentType.BANNER:
-            const imageUrl: string = `/api/${ postContent.image.url }`;
-            return (
-                <figure key={ index }
-                        className="ob-relative ob-w-full ob-h-screen ob-mb-16">
-                    <img
-                        className="ob-object-cover ob-w-full ob-h-full"
-                        src={ imageUrl }
-                        alt={ postContent.image.alternativeText }
-                    />
-                </figure>
-            );
-        case PostContentType.TEXT: {
-            return (
-                <div key={ index }
-                     className={ `ob-relative
-                                xl:ob-px-4 ob-mx-auto ob-mb-16 
-                                ${ styles['ob-post__content-container'] }` }>
-                    <ReactMarkdown
-                        className={ `ob-text-lg xl:ob-text-xl ${ styles['ob-post__markdown-content'] }` }
-                        disallowedTypes={ ['image'] }
-                        source={ postContent.content }
-                    />
-                </div>
-            );
-        }
-    }
-}
+import { PostContentMarkdown } from 'app/modules/post/ui/content/PostContentMarkdown';
 
 export default function Post({postSlug}: { postSlug: string }) {
     const {footerData, navigationData} = useLayout();
@@ -67,7 +34,6 @@ export default function Post({postSlug}: { postSlug: string }) {
         seo
     } = usePost(postSlug);
     const cardElements: Array<JSX.Element> = mapWithLast<JSX.Element, CardData>(trendingStories, getPostCardColumn);
-    const convertedContent: Array<JSX.Element> = content.map(getPostContent);
     const facebookUrl: string = `https://www.facebook.com/sharer/sharer.php?u=${ seo.pageUrl }`;
     const twitterUrl: string = `https://twitter.com/share?url=${ seo.pageUrl }`;
 
@@ -103,7 +69,7 @@ export default function Post({postSlug}: { postSlug: string }) {
                 />
             </div>
 
-            { convertedContent }
+            <PostContentMarkdown content={ content }/>
 
             <div
                 className={ `ob-relative 

@@ -1,0 +1,113 @@
+.ob-post-content-markdown {
+  &__content-container {
+    max-width: 672px;
+  }
+
+  &__markdown-content {
+    > * {
+      @apply ob-mb-4;
+
+      @screen xl {
+        @apply ob-mb-8;
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 1.3em;
+
+      @screen xl {
+        line-height: 1.2em;
+      }
+    }
+
+    h1 {
+      font-size: 1.5rem;
+
+      @screen xl {
+        font-size: 2.4rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.45rem;
+
+      @screen xl {
+        font-size: 2.2rem;
+      }
+    }
+
+    h3 {
+      font-size: 1.4rem;
+
+      @screen xl {
+        font-size: 2rem;
+      }
+    }
+
+    h4 {
+      font-size: 1.35rem;
+
+      @screen xl {
+        font-size: 1.8rem;
+      }
+    }
+
+    h5 {
+      font-size: 1.3rem;
+
+      @screen xl {
+        font-size: 1.6rem;
+      }
+    }
+
+    h6 {
+      font-size: 1.25rem;
+
+      @screen xl {
+        font-size: 1.4rem;
+      }
+    }
+
+    ul, ol {
+      @apply ob-pl-6;
+    }
+
+    ul {
+      @apply ob-list-disc;
+    }
+
+    ol {
+      @apply ob-list-decimal;
+    }
+
+    li {
+      @apply ob-py-1;
+    }
+
+    a {
+      @apply ob-text-primary ob-underline;
+    }
+
+    blockquote {
+      @apply ob-relative ob-w-full ob-mt-8 ob-py-32 ob-px-8 ob-text-center ob-bg-primary ob-text-white ob-text-2xl ob-italic;
+
+      @screen xl {
+        @apply ob-text-3xl;
+      }
+
+      &:before, &:after {
+        content: ",,";
+        @apply ob-absolute ob-inline-block ob-text-6xl;
+        line-height: 0;
+      }
+
+      &:before {
+        @apply ob-top-4 ob-left-4;
+      }
+
+      &:after {
+        @apply ob-bottom-12 ob-right-4;
+      }
+    }
+  }
+}

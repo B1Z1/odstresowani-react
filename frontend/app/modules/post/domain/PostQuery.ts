@@ -1,5 +1,5 @@
 import { PostCoverImage } from 'app/modules/post/domain/PostCoverImage';
-import { PostContent } from 'app/modules/post/components/content/PostContent';
+import { PostContent } from 'app/modules/post/infrastructure/components/content/PostContent';
 import { ApiCreatorFragment } from 'app/api/fragments/creator/ApiCreatorFragment';
 import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
 import { PostTrendingStory } from 'app/modules/post/domain/PostTrendingStory';
