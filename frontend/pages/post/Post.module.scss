@@ -1,4 +1,8 @@
 .ob-post {
+  &__content-container {
+    max-width: 672px;
+  }
+
   &__banner {
     height: 40vh;
 
