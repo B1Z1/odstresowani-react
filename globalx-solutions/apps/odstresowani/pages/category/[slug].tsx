@@ -10,7 +10,7 @@ import { FOOTER_QUERY } from 'app/api/queries/footer/footerQuery';
 import { CATEGORY_QUERY } from 'app/modules/category/query/categoryQuery';
 import { CategoryQuery } from 'app/modules/category/domain/CategoryQuery';
 import { useLayout } from 'app/modules/layout/hooks/useLayout';
-import LayoutPage from 'app/components/layouts/page/LayoutPage';
+import LayoutPage from 'app/components/layouts/page/PageLayout';
 import { usePostPreviewByCategory } from 'app/modules/post-preview-by-category/hooks/usePostPreviewByCategory';
 import { useCategory } from 'app/modules/category/hooks/useCategory';
 import { LinkList } from 'app/components/elements/link-list/LinkList';

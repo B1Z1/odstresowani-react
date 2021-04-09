@@ -15,8 +15,40 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@globalx-solutions/ui": ["libs/ui/src/index.ts"],
-      "@globalx-solutions/util": ["libs/util/src/index.ts"]
+      "@globalx-solutions/util": ["libs/util/src/index.ts"],
+      "@globalx-solutions/shared/elements/card": [
+        "libs/shared/elements/card/src/index.ts"
+      ],
+      "@globalx-solutions/shared/elements/post-date": [
+        "libs/shared/elements/post-date/src/index.ts"
+      ],
+      "@globalx-solutions/shared/elements/sygnature": [
+        "libs/shared/elements/sygnature/src/index.ts"
+      ],
+      "@globalx-solutions/shared/elements/seo": [
+        "libs/shared/elements/seo/src/index.ts"
+      ],
+      "@globalx-solutions/shared/elements/link": [
+        "libs/shared/elements/link/src/index.ts"
+      ],
+      "@globalx-solutions/shared/elements/link-list": [
+        "libs/shared/elements/link-list/src/index.ts"
+      ],
+      "@globalx-solutions/shared/layouts/default-app": [
+        "libs/shared/layouts/default-app/src/index.ts"
+      ],
+      "@globalx-solutions/shared/layouts/page": [
+        "libs/shared/layouts/page/src/index.ts"
+      ],
+      "@globalx-solutions/shared/modules/mobile-sidebar": [
+        "libs/shared/modules/mobile-sidebar/src/index.ts"
+      ],
+      "@globalx-solutions/shared/modules/header": [
+        "libs/shared/modules/header/src/index.ts"
+      ],
+      "@globalx-solutions/shared/modules/footer": [
+        "libs/shared/modules/footer/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

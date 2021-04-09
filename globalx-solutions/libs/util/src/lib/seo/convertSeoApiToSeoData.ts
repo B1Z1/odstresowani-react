@@ -1,7 +1,7 @@
-import { SEOData } from 'app/components/elements/seo/domain/SeoData';
 import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
+import {SeoData} from "@globalx-solutions/shared/elements/seo";
 
-export function convertSeoApiToSeoData(seoApiData: ApiSEOFragment, pageSuffix: string, contentType: string): SEOData {
+export function convertSeoApiToSeoData(seoApiData: ApiSEOFragment, pageSuffix: string, contentType: string): SeoData {
     return {
         title: `${ seoApiData.title } | Odstresowani Blog`,
         description: seoApiData.description,

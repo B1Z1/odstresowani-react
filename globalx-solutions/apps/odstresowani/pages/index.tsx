@@ -1,4 +1,4 @@
-import LayoutPage from 'app/components/layouts/page/LayoutPage';
+import LayoutPage from 'app/components/layouts/page/PageLayout';
 import { ApolloClient, NormalizedCacheObject } from '@apollo/client';
 import { GetServerSideProps } from 'next';
 import { initializeApollo } from 'app/lib/apollo/apolloClient';

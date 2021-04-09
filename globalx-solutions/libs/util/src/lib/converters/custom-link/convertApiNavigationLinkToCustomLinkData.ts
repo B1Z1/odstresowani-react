@@ -1,5 +1,5 @@
-import { CustomLinkData } from 'app/components/elements/link/CustomLinkData';
 import { ApiNavigationLinkFragment } from 'app/api/components/navigation/link/ApiNavigationLinkFragment';
+import {CustomLinkData} from "@globalx-solutions/shared/elements/link";
 
 export function convertApiNavigationLinkToCustomLinkData(linkFragment: ApiNavigationLinkFragment): CustomLinkData {
     return {

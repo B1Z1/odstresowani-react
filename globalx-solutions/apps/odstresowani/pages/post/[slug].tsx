@@ -6,7 +6,7 @@ import { FOOTER_QUERY } from 'app/api/queries/footer/footerQuery';
 import { POST_QUERY } from 'app/modules/post/infrastructure/queries/postQuery';
 import { PostQuery } from 'app/modules/post/domain/PostQuery';
 import { ParsedUrlQuery } from 'querystring';
-import LayoutPage from 'app/components/layouts/page/LayoutPage';
+import LayoutPage from 'app/components/layouts/page/PageLayout';
 import { useLayout } from 'app/modules/layout/hooks/useLayout';
 import styles from 'pages/post/Post.module.scss';
 import { Signature } from 'app/components/elements/sygnature/Signature';
@@ -50,7 +50,7 @@ export default function Post({postSlug}: { postSlug: string }) {
 
             <div
                 className={ `ob-relative ob-mx-auto ob-px-4 ob-py-8 xl:ob--mt-16 xl:ob-py-12
-                            ob-bg-white ob-text-center 
+                            ob-bg-white ob-text-center
                             ${ styles['ob-post__content-container'] }` }>
                 <div className="ob-absolute ob-top-0 ob-left-1/2
                                 ob-flex ob-items-center ob-justify-center
@@ -72,7 +72,7 @@ export default function Post({postSlug}: { postSlug: string }) {
             <PostContentMarkdown content={ content }/>
 
             <div
-                className={ `ob-relative 
+                className={ `ob-relative
                             ob-flex ob-flex-wrap ob-justify-center
                             ob-mb-16 ob-mx-auto ob-px-4
                             ${ styles['ob-post__content-container'] }` }>

@@ -1,5 +1,4 @@
-import { CardData } from 'app/components/elements/card/CardData';
-import { Card } from 'app/components/elements/card/Card';
+import {Card, CardData} from "@globalx-solutions/shared/elements/card";
 
 export function getPostCardColumn(blogCardsData: CardData, index: number): JSX.Element {
     const isEven: boolean = index % 2 == 0;
