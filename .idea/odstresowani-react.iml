@@ -10,6 +10,7 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/exports" />
       <excludeFolder url="file://$MODULE_DIR$/data/pg_stat_tmp" />
       <excludeFolder url="file://$MODULE_DIR$/data" />
+      <excludeFolder url="file://$MODULE_DIR$/globalx-solutions/dist" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

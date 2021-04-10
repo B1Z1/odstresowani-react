@@ -24,7 +24,7 @@ module.exports = (nextConfig = {}) => {
     webpack: (config, options) => {
       utils.addResolveAlias(config, {
         // redefine the alias because the nextjs internally adds `./` to the CSS url() path
-        [`./@globalx-solutions/shared/assets/fonts`]: `${appRootPath}/libs/assets/fonts`,
+        [`./@globalx-solutions/assets/fonts`]: `${appRootPath}/libs/assets/fonts`,
       });
 
       utils.addModuleRule(config, definitions.webfontsNextjsAppRule);
