@@ -48,7 +48,8 @@
       ],
       "@globalx-solutions/shared/modules/footer": [
         "libs/shared/modules/footer/src/index.ts"
-      ]
+      ],
+      "@globalx-solutions/assets/*": ["libs/assets/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,0 +1,39 @@
+$prefixPath: '@globalx-solutions/assets/fonts';
+
+@font-face {
+  font-family: 'Value';
+  src: url('#{$prefixPath}/Value/value-black-web/value-black.eot');
+  src: url('#{$prefixPath}/Value/value-black-web/value-black.eot?#iefix') format('embedded-opentype'),
+  url('#{$prefixPath}/Value/value-black-web/value-black.woff') format('woff'),
+  url('#{$prefixPath}/Value/value-black-web/value-black.woff2') format('woff2'),
+  url('#{$prefixPath}/Value/value-black-web/value-black.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Value';
+  src: url('#{$prefixPath}/Value/value-regular-web/value-regular.eot');
+  src: url('#{$prefixPath}/Value/value-regular-web/value-regular.eot?#iefix') format('embedded-opentype'),
+  url('#{$prefixPath}/Value/value-regular-web/value-regular.woff') format('woff'),
+  url('#{$prefixPath}/Value/value-regular-web/value-regular.woff2') format('woff2'),
+  url('#{$prefixPath}/Value/value-regular-web/value-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sanchez';
+  src: url('#{$prefixPath}/Sanchez/Sanchez-Regular.woff') format('woff'),
+  url('#{$prefixPath}/Sanchez/Sanchez-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sanchez';
+  src: url('#{$prefixPath}/Sanchez/Sanchez-Italic.woff') format('woff'),
+  url('#{$prefixPath}/Sanchez/Sanchez-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}

@@ -12,11 +12,6 @@
     }
   },
   "projects": {
-    "odstresowani": { "tags": [] },
-    "odstresowani-e2e": {
-      "tags": [],
-      "implicitDependencies": ["odstresowani"]
-    },
     "util": { "tags": [] },
     "shared-elements-card": { "tags": [] },
     "shared-elements-post-date": { "tags": [] },
@@ -28,6 +23,9 @@
     "shared-layouts-page": { "tags": [] },
     "shared-modules-mobile-sidebar": { "tags": [] },
     "shared-modules-header": { "tags": [] },
-    "shared-modules-footer": { "tags": [] }
+    "shared-modules-footer": { "tags": [] },
+    "test": { "tags": [] },
+    "test-e2e": { "tags": [], "implicitDependencies": ["test"] },
+    "assets": { "tags": [] }
   }
 }

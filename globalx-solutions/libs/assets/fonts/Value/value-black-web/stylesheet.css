@@ -1,0 +1,25 @@
+/*
+ * Web Fonts from colophon-foundry.org
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Colophon Foundry. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2017 Colophon Foundry
+ *
+ * Licenced to Bartosz Kulesza Datasky agencja reklamowa Bartosz R. Kulesza
+ */
+
+@font-face {
+    font-family: 'value-black';
+    src: url('value-black.eot');
+    src: url('value-black.eot?#iefix') format('embedded-opentype'),
+         url('value-black.woff') format('woff'),
+         url('value-black.woff2') format('woff2'),
+         url('value-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

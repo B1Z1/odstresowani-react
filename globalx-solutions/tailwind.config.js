@@ -1,10 +1,7 @@
 module.exports = {
     prefix: "ob-",
     purge: [
-        './pages/**/*.{js,ts,jsx,tsx}',
-        './app/components/**/*.{js,ts,jsx,tsx}',
-        './app/utils/ui/**/*.{js,ts,jsx,tsx}',
-        './app/modules/**/*.{js,ts,jsx,tsx}'
+        `${__dirname}/libs/shared/**/*.{js,ts,jsx,tsx}`,
     ],
     darkMode: false, // or 'media' or 'class'
     theme: {

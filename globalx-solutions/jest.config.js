@@ -1,6 +1,6 @@
 module.exports = {
   projects: [
-    '<rootDir>/apps/odstresowani',
+    ,
     '<rootDir>/libs/ui',
     '<rootDir>/libs/util',
     '<rootDir>/libs/shared/elements/card',
@@ -14,5 +14,8 @@ module.exports = {
     '<rootDir>/libs/shared/modules/mobile-sidebar',
     '<rootDir>/libs/shared/modules/header',
     '<rootDir>/libs/shared/modules/footer',
+    '<rootDir>/libs/shared/styles',
+    '<rootDir>/apps/test',
+    '<rootDir>/libs/assets',
   ],
 };
