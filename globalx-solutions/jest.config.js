@@ -22,5 +22,6 @@ module.exports = {
     '<rootDir>/libs/modules/home',
     '<rootDir>/libs/modules/layout',
     '<rootDir>/libs/modules/post',
+    '<rootDir>/libs/modules/post-preview',
   ],
 };

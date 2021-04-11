@@ -451,6 +451,29 @@
           }
         }
       }
+    },
+    "modules-post-preview": {
+      "root": "libs/modules/post-preview",
+      "sourceRoot": "libs/modules/post-preview/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/modules/post-preview/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/modules/post-preview"],
+          "options": {
+            "jestConfig": "libs/modules/post-preview/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }
