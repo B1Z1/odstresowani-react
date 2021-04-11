@@ -32,6 +32,7 @@
     "modules-home": { "tags": [] },
     "modules-layout": { "tags": [] },
     "modules-post": { "tags": [] },
-    "modules-post-preview": { "tags": [] }
+    "modules-post-preview": { "tags": [] },
+    "modules-post-preview-by-category": { "tags": [] }
   }
 }

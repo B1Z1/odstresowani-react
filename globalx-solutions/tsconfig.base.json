@@ -59,6 +59,9 @@
       "@globalx-solutions/modules/post": ["libs/modules/post/src/index.ts"],
       "@globalx-solutions/modules/post-preview": [
         "libs/modules/post-preview/src/index.ts"
+      ],
+      "@globalx-solutions/modules/post-preview-by-category": [
+        "libs/modules/post-preview-by-category/src/index.ts"
       ]
     }
   },

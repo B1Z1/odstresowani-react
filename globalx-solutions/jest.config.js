@@ -23,5 +23,6 @@ module.exports = {
     '<rootDir>/libs/modules/layout',
     '<rootDir>/libs/modules/post',
     '<rootDir>/libs/modules/post-preview',
+    '<rootDir>/libs/modules/post-preview-by-category',
   ],
 };
