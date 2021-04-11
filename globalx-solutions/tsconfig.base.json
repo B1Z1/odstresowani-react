@@ -62,6 +62,9 @@
       ],
       "@globalx-solutions/modules/post-preview-by-category": [
         "libs/modules/post-preview-by-category/src/index.ts"
+      ],
+      "@globalx-solutions/modules/apollo-initializer": [
+        "libs/modules/apollo-initializer/src/index.ts"
       ]
     }
   },

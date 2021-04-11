@@ -497,6 +497,29 @@
           }
         }
       }
+    },
+    "modules-apollo-initializer": {
+      "root": "libs/modules/apollo-initializer",
+      "sourceRoot": "libs/modules/apollo-initializer/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/modules/apollo-initializer/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/modules/apollo-initializer"],
+          "options": {
+            "jestConfig": "libs/modules/apollo-initializer/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

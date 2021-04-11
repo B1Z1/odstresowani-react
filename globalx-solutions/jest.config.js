@@ -24,5 +24,6 @@ module.exports = {
     '<rootDir>/libs/modules/post',
     '<rootDir>/libs/modules/post-preview',
     '<rootDir>/libs/modules/post-preview-by-category',
+    '<rootDir>/libs/modules/apollo-initializer',
   ],
 };
