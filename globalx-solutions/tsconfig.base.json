@@ -49,7 +49,11 @@
       "@globalx-solutions/shared/modules/footer": [
         "libs/shared/modules/footer/src/index.ts"
       ],
-      "@globalx-solutions/assets/*": ["libs/assets/*"]
+      "@globalx-solutions/assets/*": ["libs/assets/*"],
+      "@globalx-solutions/api": ["libs/api/src/index.ts"],
+      "@globalx-solutions/modules/category": [
+        "libs/modules/category/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -17,5 +17,7 @@ module.exports = {
     '<rootDir>/libs/shared/styles',
     '<rootDir>/apps/test',
     '<rootDir>/libs/assets',
+    '<rootDir>/libs/api',
+    '<rootDir>/libs/modules/category',
   ],
 };

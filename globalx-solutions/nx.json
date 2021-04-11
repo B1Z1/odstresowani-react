@@ -26,6 +26,8 @@
     "shared-modules-footer": { "tags": [] },
     "test": { "tags": [] },
     "test-e2e": { "tags": [], "implicitDependencies": ["test"] },
-    "assets": { "tags": [] }
+    "assets": { "tags": [] },
+    "api": { "tags": [] },
+    "modules-category": { "tags": [] }
   }
 }
