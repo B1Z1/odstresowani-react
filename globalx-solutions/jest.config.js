@@ -21,5 +21,6 @@ module.exports = {
     '<rootDir>/libs/modules/category',
     '<rootDir>/libs/modules/home',
     '<rootDir>/libs/modules/layout',
+    '<rootDir>/libs/modules/post',
   ],
 };

@@ -430,6 +430,27 @@
           }
         }
       }
+    },
+    "modules-post": {
+      "root": "libs/modules/post",
+      "sourceRoot": "libs/modules/post/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/modules/post/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/modules/post"],
+          "options": {
+            "jestConfig": "libs/modules/post/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   }
 }

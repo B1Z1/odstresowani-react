@@ -30,6 +30,7 @@
     "api": { "tags": [] },
     "modules-category": { "tags": [] },
     "modules-home": { "tags": [] },
-    "modules-layout": { "tags": [] }
+    "modules-layout": { "tags": [] },
+    "modules-post": { "tags": [] }
   }
 }
