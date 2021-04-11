@@ -19,5 +19,7 @@ module.exports = {
     '<rootDir>/libs/assets',
     '<rootDir>/libs/api',
     '<rootDir>/libs/modules/category',
+    '<rootDir>/libs/modules/home',
+    '<rootDir>/libs/modules/layout',
   ],
 };

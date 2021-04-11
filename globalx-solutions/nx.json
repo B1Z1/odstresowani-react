@@ -28,6 +28,8 @@
     "test-e2e": { "tags": [], "implicitDependencies": ["test"] },
     "assets": { "tags": [] },
     "api": { "tags": [] },
-    "modules-category": { "tags": [] }
+    "modules-category": { "tags": [] },
+    "modules-home": { "tags": [] },
+    "modules-layout": { "tags": [] }
   }
 }

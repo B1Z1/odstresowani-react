@@ -53,7 +53,9 @@
       "@globalx-solutions/api": ["libs/api/src/index.ts"],
       "@globalx-solutions/modules/category": [
         "libs/modules/category/src/index.ts"
-      ]
+      ],
+      "@globalx-solutions/modules/home": ["libs/modules/home/src/index.ts"],
+      "@globalx-solutions/modules/layout": ["libs/modules/layout/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
