@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "name": "Post",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "creation_date": {
+      "type": "date",
+      "required": true
+    },
+    "cover_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "categories": {
+      "collection": "category",
+      "via": "posts",
+      "dominant": true
+    },
+    "preview_content": {
+      "type": "text",
+      "required": true
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "post.banner",
+        "post.text"
+      ]
+    },
+    "trendingStories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "post.tending-stories",
+      "max": 2,
+      "required": true
+    },
+    "creator": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "posts"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "unique": true
+    }
+  }
+}

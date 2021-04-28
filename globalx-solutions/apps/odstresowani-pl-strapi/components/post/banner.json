@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_media_banners",
+  "info": {
+    "name": "Banner",
+    "icon": "image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

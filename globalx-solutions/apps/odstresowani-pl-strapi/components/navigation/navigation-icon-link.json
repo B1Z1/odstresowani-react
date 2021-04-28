@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_navigation_navigation_icon_links",
+  "info": {
+    "name": "NavigationIconLink",
+    "icon": "archway",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "iconName": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "inNewTab": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

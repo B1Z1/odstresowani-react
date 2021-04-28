@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_post_tending_stories",
+  "info": {
+    "name": "tendingStories",
+    "icon": "align-right",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "post": {
+      "model": "post"
+    }
+  }
+}

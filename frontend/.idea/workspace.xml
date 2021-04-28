@@ -1,7 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="" />
+    <list default="true" id="9863125f-fd94-42a6-9166-f7724fcafbf3" name="Default Changelist" comment="[FRONTEND] - Create quote block for markdown editor">
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-next/next.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-next/pages/category/[slug].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-next/pages/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-next/pages/post/Post.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-next/pages/post/[slug].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-next/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/category/config/routes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/category/config/schema.graphql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/category/controllers/category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/category/models/category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/category/models/category.settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/category/services/category.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/footer/config/routes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/footer/controllers/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/footer/models/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/footer/models/footer.settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/footer/services/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/home-page/config/routes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/home-page/controllers/home-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/home-page/models/home-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/home-page/models/home-page.settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/home-page/services/home-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/navigation/config/routes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/navigation/controllers/navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/navigation/models/navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/navigation/models/navigation.settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/navigation/services/navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/post/config/routes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/post/config/schema.graphql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/post/controllers/post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/post/models/post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/post/models/post.settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/api/post/services/post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/components/footer/navigation-column-empty.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/components/footer/navigation-column-with-title.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/components/footer/navigation-column-without-title.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/components/media/image-source.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/components/navigation/navigation-category.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/components/navigation/navigation-icon-link.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/components/navigation/navigation-link.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/components/post/banner.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/components/post/tending-stories.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/components/post/text.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/components/seo/seo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/extensions/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/extensions/users-permissions/config/jwt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/apps/odstresowani-pl-strapi/extensions/users-permissions/models/User.settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../globalx-solutions/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test-e2e/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test-e2e/cypress.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test-e2e/src/fixtures/example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test-e2e/src/integration/app.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test-e2e/src/plugins/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test-e2e/src/support/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test-e2e/src/support/commands.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test-e2e/src/support/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test-e2e/tsconfig.e2e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test-e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/jest.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/next-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/pages/_app.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/pages/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/pages/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/public/nx-logo-white.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/public/star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/specs/index.spec.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/tailwind.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/apps/test/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/jest.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../globalx-solutions/jest.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/libs/shared/layouts/default-app/src/lib/DefaultAppLayoutComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../globalx-solutions/libs/shared/layouts/default-app/src/lib/DefaultAppLayoutComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/libs/shared/layouts/page/src/lib/PageLayout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../globalx-solutions/libs/shared/layouts/page/src/lib/PageLayout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/libs/shared/layouts/page/src/lib/PageLayoutProps.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../globalx-solutions/libs/shared/layouts/page/src/lib/PageLayoutProps.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/nx.json" beforeDir="false" afterPath="$PROJECT_DIR$/../globalx-solutions/nx.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../globalx-solutions/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/tools/config/webpack/helpers/definitions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../globalx-solutions/tools/config/webpack/helpers/definitions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/workspace.json" beforeDir="false" afterPath="$PROJECT_DIR$/../globalx-solutions/workspace.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../globalx-solutions/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../globalx-solutions/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,6 +172,7 @@
       <workItem from="1615241858616" duration="270000" />
       <workItem from="1615242459854" duration="2779000" />
       <workItem from="1615715715507" duration="2592000" />
+      <workItem from="1619642798927" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="Code refactor">
       <created>1613795161051</created>

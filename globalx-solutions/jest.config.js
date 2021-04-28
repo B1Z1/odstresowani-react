@@ -15,7 +15,6 @@ module.exports = {
     '<rootDir>/libs/shared/modules/header',
     '<rootDir>/libs/shared/modules/footer',
     '<rootDir>/libs/shared/styles',
-    '<rootDir>/apps/test',
     '<rootDir>/libs/assets',
     '<rootDir>/libs/api',
     '<rootDir>/libs/modules/category',
@@ -25,5 +24,7 @@ module.exports = {
     '<rootDir>/libs/modules/post-preview',
     '<rootDir>/libs/modules/post-preview-by-category',
     '<rootDir>/libs/modules/apollo-initializer',
+    '<rootDir>/apps/odstresowani/pl/frontend',
+    '<rootDir>/apps/odstresowani-pl-next',
   ],
 };

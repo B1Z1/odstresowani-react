@@ -1,39 +1,103 @@
 {
   "implicitDependencies": {
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     ".eslintrc.json": "*"
   },
-  "affected": { "defaultBase": "master" },
+  "affected": {
+    "defaultBase": "master"
+  },
   "npmScope": "globalx-solutions",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
+      }
     }
   },
   "projects": {
-    "util": { "tags": [] },
-    "shared-elements-card": { "tags": [] },
-    "shared-elements-post-date": { "tags": [] },
-    "shared-elements-sygnature": { "tags": [] },
-    "shared-elements-seo": { "tags": [] },
-    "shared-elements-link": { "tags": [] },
-    "shared-elements-link-list": { "tags": [] },
-    "shared-layouts-default-app": { "tags": [] },
-    "shared-layouts-page": { "tags": [] },
-    "shared-modules-mobile-sidebar": { "tags": [] },
-    "shared-modules-header": { "tags": [] },
-    "shared-modules-footer": { "tags": [] },
-    "test": { "tags": [] },
-    "test-e2e": { "tags": [], "implicitDependencies": ["test"] },
-    "assets": { "tags": [] },
-    "api": { "tags": [] },
-    "modules-category": { "tags": [] },
-    "modules-home": { "tags": [] },
-    "modules-layout": { "tags": [] },
-    "modules-post": { "tags": [] },
-    "modules-post-preview": { "tags": [] },
-    "modules-post-preview-by-category": { "tags": [] },
-    "modules-apollo-initializer": { "tags": [] }
+    "util": {
+      "tags": []
+    },
+    "shared-elements-card": {
+      "tags": []
+    },
+    "shared-elements-post-date": {
+      "tags": []
+    },
+    "shared-elements-sygnature": {
+      "tags": []
+    },
+    "shared-elements-seo": {
+      "tags": []
+    },
+    "shared-elements-link": {
+      "tags": []
+    },
+    "shared-elements-link-list": {
+      "tags": []
+    },
+    "shared-layouts-default-app": {
+      "tags": []
+    },
+    "shared-layouts-page": {
+      "tags": []
+    },
+    "shared-modules-mobile-sidebar": {
+      "tags": []
+    },
+    "shared-modules-header": {
+      "tags": []
+    },
+    "shared-modules-footer": {
+      "tags": []
+    },
+    "assets": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "modules-category": {
+      "tags": []
+    },
+    "modules-home": {
+      "tags": []
+    },
+    "modules-layout": {
+      "tags": []
+    },
+    "modules-post": {
+      "tags": []
+    },
+    "modules-post-preview": {
+      "tags": []
+    },
+    "modules-post-preview-by-category": {
+      "tags": []
+    },
+    "modules-apollo-initializer": {
+      "tags": []
+    },
+    "odstresowani-pl-strapi": {
+      "tags": []
+    },
+    "odstresowani-pl-next": {
+      "tags": []
+    },
+    "odstresowani-pl-next-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "odstresowani-pl-next"
+      ]
+    }
   }
 }
