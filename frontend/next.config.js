@@ -13,10 +13,10 @@ module.exports = {
         return 'frontend'
     },
     env: {
-        NEXT_PUBLIC_HOST_URL: process.env.NEXT_PUBLIC_HOST_URL,
-        NEXT_PUBLIC_HOST_API_URL: process.env.NEXT_PUBLIC_HOST_API_URL,
-        HOST_SSR_URL: process.env.HOST_SSR_URL,
-        HOST_SSR_API_URL: process.env.HOST_SSR_API_URL
+        NEXT_PUBLIC_HOST_URL: 'https://odstresowani.pl',
+        NEXT_PUBLIC_HOST_API_URL: 'https://odstresowani.pl/api',
+        HOST_SSR_URL: 'https://nginx',
+        HOST_SSR_API_URL: 'https://nginx/api'
     },
 
     i18n: {

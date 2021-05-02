@@ -19,6 +19,3 @@ COPY ./ ./
 RUN npm run build
 
 #USER node
-
-#CMD [ "pm2-runtime", "npm", "--", "start" ]
-#CMD [ "npm", "run", "dev" ]
