@@ -10,12 +10,22 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "name": {
       "type": "string",
       "private": false,
       "required": true,
-      "maxLength": 64
+      "maxLength": 64,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "categories": {
       "collection": "category"
@@ -24,12 +34,22 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.seo",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "string",
       "required": false,
-      "unique": true
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "posts": {
       "via": "categories",

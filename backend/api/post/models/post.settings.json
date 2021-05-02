@@ -10,15 +10,30 @@
     "timestamps": true,
     "draftAndPublish": true
   },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "title": {
       "type": "string",
       "required": true,
-      "unique": true
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "creation_date": {
       "type": "date",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "cover_image": {
       "model": "file",
@@ -27,30 +42,50 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "categories": {
-      "collection": "category",
       "via": "posts",
+      "collection": "category",
       "dominant": true
     },
     "preview_content": {
       "type": "text",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "content": {
       "type": "dynamiczone",
       "components": [
         "post.banner",
         "post.text"
-      ]
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "trendingStories": {
       "type": "component",
       "repeatable": true,
       "component": "post.tending-stories",
       "max": 2,
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "creator": {
       "plugin": "users-permissions",
@@ -61,11 +96,21 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.seo",
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "slug": {
       "type": "string",
-      "unique": true
+      "unique": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

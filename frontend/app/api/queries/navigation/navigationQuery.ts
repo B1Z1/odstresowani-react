@@ -1,4 +1,4 @@
-import { gql } from 'graphql-tag';
+import {gql} from 'graphql-tag';
 import {
     navigationLinkFragment,
     navigationLinkFragmentName
@@ -9,15 +9,15 @@ import {
 } from 'app/api/components/navigation/category/navigationCategoryLinkFragment';
 
 export const NAVIGATION_QUERY = gql`
-    query navigationQuery {
-        navigation {
+    query navigationQuery($locale: String) {
+        navigation(locale: $locale) {
             items {
                 ... on ComponentNavigationNavigationCategory {
-                    ...${ navigationCategoryLinkFragmentName }
+                    ...${navigationCategoryLinkFragmentName}
                 }
                 
                 ... on ComponentNavigationNavigationLink {
-                    ...${ navigationLinkFragmentName }
+                    ...${navigationLinkFragmentName}
                 }
                 
                 __typename
@@ -25,6 +25,6 @@ export const NAVIGATION_QUERY = gql`
         }
     }
     
-    ${ navigationCategoryLinkFragment }
-    ${ navigationLinkFragment }
+    ${navigationCategoryLinkFragment}
+    ${navigationLinkFragment}
 `;

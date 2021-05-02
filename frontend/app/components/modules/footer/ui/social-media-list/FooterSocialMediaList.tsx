@@ -11,7 +11,7 @@ export function FooterSocialMediaList(props: FooterSocialMediaListProps) {
     }
 
     return (
-        <ul className="ob-flex ob-w-full ob-flex-wrap ob-text-white">
+        <ul className={ `${ props.className || '' } ob-flex ob-flex-wrap ob-text-white` }>
             { socialMediaItems }
         </ul>
     );

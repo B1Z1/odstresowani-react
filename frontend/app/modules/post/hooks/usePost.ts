@@ -11,11 +11,12 @@ import { convertSeoApiToSeoData } from 'app/utils/seo/convertSeoApiToSeoData';
 import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
 import { convertTrendingStoriesToCardData } from 'app/modules/post/utils/convertTrendingStoriesToCardData';
 import { convertQueryCreatorToPostCreator } from 'app/modules/post/utils/convertQueryCreatorToPostCreator';
+import { PostQueryParams } from 'app/modules/post/domain/PostQueryParams';
 
 export function usePost(postSlug: string): HookPostData {
-    const {data: postData} = useQuery<PostQuery>(
+    const { data: postData } = useQuery<PostQuery, PostQueryParams>(
         POST_QUERY,
-        {variables: {postSlug: postSlug}}
+        { variables: { postSlug: postSlug } }
     );
 
     const creationDate: Date = new Date(postData?.postBySlug.creation_date as string);

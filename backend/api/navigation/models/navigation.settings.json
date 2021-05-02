@@ -2,12 +2,18 @@
   "kind": "singleType",
   "collectionName": "navigation",
   "info": {
-    "name": "Navigation"
+    "name": "Navigation",
+    "description": ""
   },
   "options": {
     "increments": true,
     "timestamps": true,
     "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
   },
   "attributes": {
     "items": {
@@ -16,7 +22,12 @@
         "navigation.navigation-category",
         "navigation.navigation-link"
       ],
-      "required": true
+      "required": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

@@ -6,14 +6,16 @@ import { ApolloProvider } from '@apollo/client';
 import { useApollo } from 'app/lib/apollo/apolloClient';
 
 
-function App({Component, pageProps}: AppProps) {
-  const apolloClient = useApollo(pageProps.initialApolloState);
+function App({ Component, pageProps }: AppProps) {
+    const apolloClient = useApollo(pageProps.initialApolloState);
 
-  return <ApolloProvider client={ apolloClient }>
-    <AppLayout>
-      <Component { ...pageProps } />
-    </AppLayout>
-  </ApolloProvider>;
+    return (
+        <ApolloProvider client={ apolloClient }>
+            <AppLayout>
+                <Component { ...pageProps } />
+            </AppLayout>
+        </ApolloProvider>
+    );
 }
 
 export default App;

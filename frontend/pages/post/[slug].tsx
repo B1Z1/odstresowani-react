@@ -21,9 +21,12 @@ import { GetServerSideProps, GetServerSidePropsContext } from 'next';
 import { ApolloClient, NormalizedCacheObject } from '@apollo/client';
 import * as fas from '@fortawesome/free-brands-svg-icons';
 import { PostContentMarkdown } from 'app/modules/post/ui/content/PostContentMarkdown';
+import { ApiLocale } from 'app/api/utils/locale/ApiLocale';
+import { apiParseLocale } from 'app/api/utils/locale/apiParseLocale';
+import { PostQueryParams } from 'app/modules/post/domain/PostQueryParams';
 
-export default function Post({postSlug}: { postSlug: string }) {
-    const {footerData, navigationData} = useLayout();
+export default function Post({ postSlug }: { postSlug: string }) {
+    const { footerData, navigationData } = useLayout();
     const {
         trendingStories,
         creationDate,
@@ -131,10 +134,11 @@ export default function Post({postSlug}: { postSlug: string }) {
 }
 
 export const getServerSideProps: GetServerSideProps = async (context: GetServerSidePropsContext<ParsedUrlQuery>) => {
+    const parsedLocale: ApiLocale = apiParseLocale(context.locale);
     const postSlug: string = context.params?.slug as string;
     const apolloClient: ApolloClient<NormalizedCacheObject> = initializeApollo();
 
-    await apolloClient.query<PostQuery>({
+    await apolloClient.query<PostQuery, PostQueryParams>({
         query: POST_QUERY,
         variables: {
             postSlug: postSlug
@@ -142,11 +146,17 @@ export const getServerSideProps: GetServerSideProps = async (context: GetServerS
     });
 
     await apolloClient.query<ApiNavigationQuery>({
-        query: NAVIGATION_QUERY
+        query: NAVIGATION_QUERY,
+        variables: {
+            locale: parsedLocale
+        }
     });
 
     await apolloClient.query<ApiFooterQuery>({
-        query: FOOTER_QUERY
+        query: FOOTER_QUERY,
+        variables: {
+            locale: parsedLocale
+        }
     });
 
     return {

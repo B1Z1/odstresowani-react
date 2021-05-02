@@ -21,8 +21,8 @@ import {
 } from 'app/api/components/navigation/link/navigationLinkFragment';
 
 export const FOOTER_QUERY = gql`
-    query footerQuery {
-        footer {
+    query footerQuery($locale: String) {
+        footer(locale: $locale) {
             columns {
                 ... on ComponentFooterNavigationColumnEmpty {
                     ...${ footerColumnEmptyFragmentName }

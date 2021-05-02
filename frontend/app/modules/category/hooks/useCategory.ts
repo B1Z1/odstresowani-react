@@ -6,11 +6,17 @@ import { CATEGORY_QUERY } from 'app/modules/category/query/categoryQuery';
 import { SEOData } from 'app/components/elements/seo/domain/SEOData';
 import { convertSeoApiToSeoData } from 'app/utils/seo/convertSeoApiToSeoData';
 import { ApiSEOFragment } from 'app/api/components/seo/ApiSEOFragment';
+import { NextRouter, useRouter } from 'next/router';
+import { ApiLocale } from 'app/api/utils/locale/ApiLocale';
+import { apiParseLocale } from 'app/api/utils/locale/apiParseLocale';
+import { CategoryQueryParams } from 'app/modules/category/domain/CategoryQueryParams';
 
 export function useCategory(categorySlug: string): HookCategoryData {
-    const {data: categoryData} = useQuery<CategoryQuery>(
+    const { locale }: NextRouter = useRouter();
+    const parsedLocale: ApiLocale = apiParseLocale(locale);
+    const { data: categoryData } = useQuery<CategoryQuery, CategoryQueryParams>(
         CATEGORY_QUERY,
-        {variables: {categorySlug: categorySlug}}
+        { variables: { categorySlug: categorySlug, locale: parsedLocale } }
     );
     const categoryName: string = categoryData?.categoryBySlug.name as string;
     const convertedCategoriesData: Array<CustomLinkData> =

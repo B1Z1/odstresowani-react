@@ -1,4 +1,4 @@
-import { ApiType } from 'app/utils/api-type/ApiType';
+import { ApiType } from 'app/utils/api/type/ApiType';
 import { ApiNavigationLinkFragment } from 'app/api/components/navigation/link/ApiNavigationLinkFragment';
 import { ApiNavigationTypes } from 'app/api/components/navigation/ApiNavigationTypes';
 import { ApiNavigationIconLinkFragment } from 'app/api/components/navigation/icon-link/ApiNavigationIconLinkFragment';

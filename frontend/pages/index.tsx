@@ -1,28 +1,36 @@
-import LayoutPage from 'app/components/layouts/page/LayoutPage';
 import { ApolloClient, NormalizedCacheObject } from '@apollo/client';
-import { GetServerSideProps } from 'next';
-import { initializeApollo } from 'app/lib/apollo/apolloClient';
-import { CardData } from 'app/components/elements/card/CardData';
-import InfiniteScroll from 'react-infinite-scroll-component';
-import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
-import { useEffect, useState } from 'react';
-import { HOME_QUERY } from 'app/modules/home/queries/homeQuery';
-import { HomeQuery } from 'app/modules/home/domain/HomeQuery';
 import { ApiPostPreviewFragment } from 'app/api/fragments/post-preview/ApiPostPreviewFragment';
-import { NAVIGATION_QUERY } from 'app/api/queries/navigation/navigationQuery';
-import { ApiNavigationQuery } from 'app/api/queries/navigation/ApiNavigationQuery';
 import { ApiFooterQuery } from 'app/api/queries/footer/ApiFooterQuery';
+import { ApiFooterQueryParams } from 'app/api/queries/footer/ApiFooterQueryParams';
 import { FOOTER_QUERY } from 'app/api/queries/footer/footerQuery';
-import { useHome } from 'app/modules/home/hooks/useHome';
-import { getPostCardColumn } from 'app/utils/ui/post-card/getPostCardColumn';
-import { useLayout } from 'app/modules/layout/hooks/useLayout';
+import { ApiNavigationQuery } from 'app/api/queries/navigation/ApiNavigationQuery';
+import { ApiNavigationQueryParams } from 'app/api/queries/navigation/ApiNavigationQueryParams';
+import { NAVIGATION_QUERY } from 'app/api/queries/navigation/navigationQuery';
+import { ApiPostPreviewQueryParams } from 'app/api/queries/post-preview/ApiPostPreviewQueryParams';
 import { POST_PREVIEW_QUERY } from 'app/api/queries/post-preview/postPreviewQuery';
+import { apiParseLocale } from 'app/api/utils/locale/apiParseLocale';
+import { CardData } from 'app/components/elements/card/CardData';
+import LayoutPage from 'app/components/layouts/page/LayoutPage';
+import { initializeApollo } from 'app/lib/apollo/apolloClient';
+import { HomeQuery } from 'app/modules/home/domain/HomeQuery';
+import { HomeQueryParams } from 'app/modules/home/domain/HomeQueryParams';
+import { useHome } from 'app/modules/home/hooks/useHome';
+import { HOME_QUERY } from 'app/modules/home/queries/homeQuery';
+import { useLayout } from 'app/modules/layout/hooks/useLayout';
 import { usePostPreview } from 'app/modules/post-preview/hooks/usePostPreviewByCategory';
+import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
+import { getPostCardColumn } from 'app/utils/ui/post-card/getPostCardColumn';
+import { GetServerSideProps } from 'next';
+import { useEffect, useState } from 'react';
+import InfiniteScroll from 'react-infinite-scroll-component';
+import { ApiLocale } from 'app/api/utils/locale/ApiLocale';
+import { NextRouter, useRouter } from 'next/router';
 
 export default function Home() {
-    const {footerData, navigationData} = useLayout();
-    const {seoData} = useHome();
-    const {loadPostsData, previewPostsData} = usePostPreview();
+    const { locale }: NextRouter = useRouter();
+    const { footerData, navigationData } = useLayout();
+    const { seoData } = useHome();
+    const { loadPostsData, previewPostsData } = usePostPreview();
     const [hasMore, setHasMore] = useState<boolean>(false);
     const [postsData, setPostsData] = useState<Array<CardData>>([]);
     const startIndex: number = postsData.length;
@@ -45,6 +53,10 @@ export default function Home() {
         setPostsData([...postsData, ...allPosts]);
         setHasMore(true);
     }, [previewPostsData]);
+
+    useEffect(() => {
+        setPostsData([]);
+    }, [locale]);
 
     function fetchData(): void {
         loadPostsData(startIndex);
@@ -84,25 +96,37 @@ export default function Home() {
     );
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
+    const parsedLocale: ApiLocale = apiParseLocale(locale);
     const apolloClient: ApolloClient<NormalizedCacheObject> = initializeApollo();
-    await apolloClient.query<HomeQuery>({
-        query: HOME_QUERY
-    });
 
-    await apolloClient.query<ApiPostPreviewFragment>({
-        query: POST_PREVIEW_QUERY,
+    await apolloClient.query<HomeQuery, HomeQueryParams>({
+        query: HOME_QUERY,
         variables: {
-            startIndex: 0
+            locale: parsedLocale
         }
     });
 
-    await apolloClient.query<ApiNavigationQuery>({
-        query: NAVIGATION_QUERY
+    await apolloClient.query<ApiPostPreviewFragment, ApiPostPreviewQueryParams>({
+        query: POST_PREVIEW_QUERY,
+        variables: {
+            startIndex: 0,
+            locale: parsedLocale
+        }
     });
 
-    await apolloClient.query<ApiFooterQuery>({
-        query: FOOTER_QUERY
+    await apolloClient.query<ApiNavigationQuery, ApiNavigationQueryParams>({
+        query: NAVIGATION_QUERY,
+        variables: {
+            locale: parsedLocale
+        }
+    });
+
+    await apolloClient.query<ApiFooterQuery, ApiFooterQueryParams>({
+        query: FOOTER_QUERY,
+        variables: {
+            locale: parsedLocale
+        }
     });
 
     return {

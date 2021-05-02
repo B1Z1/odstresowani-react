@@ -21,10 +21,10 @@ import { mapWithLast } from 'app/utils/map-with-last/mapWithLast';
 import { getPostCardColumn } from 'app/utils/ui/post-card/getPostCardColumn';
 import { ParsedUrlQuery } from 'querystring';
 
-export default function Category({categorySlug}: { categorySlug: string }) {
-    const {footerData, navigationData} = useLayout();
-    const {categoryId, categoriesData, seoData} = useCategory(categorySlug);
-    const {loadPostsData, previewPostsData} = usePostPreviewByCategory(categoryId);
+export default function Category({ categorySlug }: { categorySlug: string }) {
+    const { footerData, navigationData } = useLayout();
+    const { categoryId, categoriesData, seoData } = useCategory(categorySlug);
+    const { loadPostsData, previewPostsData } = usePostPreviewByCategory(categoryId);
     const [hasMore, setHasMore] = useState<boolean>(false);
     const [postsData, setPostsData] = useState<Array<CardData>>([]);
     const startIndex: number = postsData.length;

@@ -12,8 +12,8 @@ import {
 import { seoFragment, seoFragmentName } from 'app/api/components/seo/seoFragment';
 
 export const POST_QUERY = gql`
-    query postQuery($postSlug: String) {
-      postBySlug(slug: $postSlug) {
+    query postQuery($locale: String, $postSlug: String) {
+      postBySlug(locale: $locale, slug: $postSlug) {
         id
         slug
         cover_image {
