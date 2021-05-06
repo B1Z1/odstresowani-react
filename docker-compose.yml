@@ -36,8 +36,5 @@ services:
     build: ./frontend
 
   nginx:
-    depends_on:
-      - nextjs
-      - strapi
     ports:
       - 80:80
