@@ -21,10 +21,10 @@ services:
       ENVSUBST_VARS: FQDN
       FQDN: odstresowani.pl
     volumes:
-      - ./nginx/production/default.conf:/etc/nginx/user.conf.d
+      - ./nginx/production:/etc/nginx/user.conf.d:ro
       - letsencrypt:/etc/letsencrypt
     ports:
-      - 80:80
-      - 443:443
+      - 80:80/tcp
+      - 443:443/tcp
 volumes:
   letsencrypt:
