@@ -17,12 +17,16 @@ services:
     build:
       context: ./nginx
       dockerfile: Dockerfile
+      environment:
+        CERTBOT_EMAIL: office@globalx.pl
+        ENVSUBST_VARS: FQDN
+        FQDN: odstresowani.pl
       args:
         build_type: production
-        CERTBOT_EMAIL: office@globalx.pl
-        DOMAIN_LIST: odstresowani.pl,www.odstresowani.pl
     volumes:
       - letsencrypt:/etc/letsencrypt
     ports:
       - 80:80
       - 443:443
+  volumes:
+    letsencrypt:
