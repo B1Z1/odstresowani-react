@@ -14,13 +14,13 @@ services:
     command: pm2-runtime npm -- start
 
   nginx:
+    environment:
+      CERTBOT_EMAIL: office@globalx.pl
+      ENVSUBST_VARS: FQDN
+      FQDN: odstresowani.pl
     build:
       context: ./nginx
       dockerfile: Dockerfile
-      environment:
-        CERTBOT_EMAIL: office@globalx.pl
-        ENVSUBST_VARS: FQDN
-        FQDN: odstresowani.pl
       args:
         build_type: production
     volumes:
