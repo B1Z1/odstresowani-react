@@ -24,7 +24,6 @@ services:
       - ./nginx/production:/etc/nginx/user.conf.d:ro
       - letsencrypt:/etc/letsencrypt
     ports:
-      - 80:80/tcp
       - 443:443/tcp
 volumes:
   letsencrypt:
